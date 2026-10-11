@@ -86,3 +86,360 @@ details.rule-group .group-content {
         padding: 12px 14px 4px;
     }
 }
+
+/* Overview cards at the top: one card per rule, with links to its tabs */
+
+.rulesOverview h2 {
+    font-family: var(--brand-font-stack);
+    font-size: 1.8em;
+    margin: 10px 0 4px;
+}
+
+.overviewGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+    margin: 12px 0 20px;
+}
+
+.overviewCard {
+    background-color: var(--bg);
+    border: 2px solid darkolivegreen;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+
+.overviewCard h3 {
+    font-family: var(--brand-font-stack);
+    font-size: 1.3em;
+    margin: 0 0 6px;
+}
+
+.overviewCard h3 a {
+    color: var(--fg);
+    text-decoration: none;
+}
+
+.overviewCard h3 a:hover {
+    text-decoration: underline;
+}
+
+.overviewCard p {
+    margin: 0 0 8px;
+}
+
+.subLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.subLinks a {
+    display: inline-block;
+    border: 1px solid darkolivegreen;
+    border-radius: 999px;
+    padding: 0 10px;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.subLinks a:hover {
+    background-color: darkolivegreen;
+    color: #fff;
+}
+
+/* Inside each dropdown */
+
+.groupLead {
+    font-weight: 600;
+    font-size: 1.1em;
+    border-left: 4px solid darkolivegreen;
+    padding-left: 12px;
+}
+
+details.rule-group {
+    scroll-margin-top: 10px;
+}
+
+details.rule-group .nav-tabs {
+    margin-top: 16px;
+    border-bottom-width: 4px;
+}
+
+details.rule-group .nav-tabs .nav-item .nav-link {
+    margin: 0 6px 6px 0;
+    padding: 6px 14px;
+    border-radius: 7px 7px 0 0;
+    font-size: 1rem;
+}
+
+details.rule-group .nav-tabs .nav-item .nav-link.active {
+    margin: 0 6px 0 0;
+}
+
+details.rule-group .tab-content {
+    padding: 14px 0 4px;
+}
+
+/* Tables that stack into labelled cards on phones */
+
+.caseTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+.caseTable th {
+    background-color: darkolivegreen;
+    color: #fff;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.caseTable td {
+    padding: 8px 12px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--bg-soft-contrast);
+}
+
+.caseTable tbody tr:nth-child(even) {
+    background-color: var(--bg-soft-contrast);
+}
+
+.caseTable th:nth-child(2) {
+    width: 10em;
+}
+
+.caseTable.twoCol th:first-child {
+    width: 28%;
+}
+
+.caseTable.twoCol th:nth-child(2) {
+    width: auto;
+}
+
+.caseTable.mapCompare th:nth-child(2) {
+    width: auto;
+}
+
+.caseTable.mapCompare th:nth-child(3) {
+    width: 5em;
+}
+
+.verdict {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.verdictYes {
+    background-color: darkolivegreen;
+}
+
+.verdictNo {
+    background-color: #b22222;
+}
+
+.verdictMust {
+    background-color: #076678;
+}
+
+.verdictSkip {
+    background-color: #665c54;
+}
+
+.verdictMaybe {
+    background-color: #8a5a00;
+}
+
+/* Allowed / not allowed lists side by side */
+
+.twoLists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.listBox {
+    border: 2px solid darkolivegreen;
+    border-radius: 12px;
+    padding: 10px 16px 2px;
+}
+
+.listBox h3 {
+    font-size: 1.2em;
+    margin: 0 0 6px;
+}
+
+.bannedBox {
+    border-color: #b22222;
+}
+
+/* Map diagrams */
+
+.mapPane {
+    display: grid;
+    grid-template-columns: minmax(0, 360px) 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.mapPane svg {
+    width: 100%;
+    height: auto;
+}
+
+.mapPane h3 {
+    font-size: 1.25em;
+    margin: 0 0 6px;
+}
+
+.mapPane p {
+    margin: 0 0 6px;
+}
+
+.mapExample {
+    font-style: italic;
+}
+
+.mapLegend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    list-style: none;
+    padding: 8px 0 0;
+    margin: 0 0 8px;
+    font-size: 0.95em;
+}
+
+.mapLegend li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.mapLegend svg {
+    height: 20px;
+    width: auto;
+}
+
+.mapTrack {
+    fill: none;
+    stroke: #d65d0e;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.mapRide {
+    fill: none;
+    stroke: rgba(107, 142, 35, 0.4);
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.mapTrackFaint {
+    fill: none;
+    stroke: var(--fg);
+    stroke-opacity: 0.35;
+    stroke-width: 5;
+    stroke-dasharray: 8 6;
+}
+
+.mapStopMust {
+    fill: olivedrab;
+    stroke: var(--fg);
+    stroke-width: 3;
+}
+
+.mapStop {
+    fill: var(--bg);
+    stroke: var(--fg);
+    stroke-width: 3;
+}
+
+.mapArrow,
+.mapJunction {
+    fill: var(--fg);
+}
+
+.mapArrowLine {
+    stroke: var(--fg);
+    stroke-width: 2;
+}
+
+.mapCross {
+    stroke: #cc241d;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.mapBadge {
+    fill: var(--bg);
+    stroke: var(--fg);
+    stroke-width: 2;
+}
+
+.mapBadgeText,
+.mapLabel {
+    fill: var(--fg);
+    font-family: var(--base-font-stack);
+    text-anchor: middle;
+}
+
+.mapBadgeText {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.mapLabel {
+    font-size: 14px;
+}
+
+@media(max-width: 768px) {
+    .rulesOverview h2 {
+        font-size: 1.4em;
+    }
+
+    .twoLists,
+    .mapPane {
+        grid-template-columns: 1fr;
+    }
+
+    .caseTable thead {
+        display: none;
+    }
+
+    .caseTable tr {
+        display: block;
+        border: 2px solid darkolivegreen;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .caseTable td {
+        display: block;
+        border-bottom: none;
+        padding: 6px 12px;
+    }
+
+    .caseTable td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.8em;
+        font-weight: 700;
+        text-transform: uppercase;
+        opacity: 0.75;
+    }
+}
