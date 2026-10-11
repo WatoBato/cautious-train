@@ -1,0 +1,9 @@
+{
+  "name": "transitruns-rules",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone TransitRuns speedrun rules page",
+  "scripts": {
+    "start": "python3 -m http.server 3000"
+  }
+}

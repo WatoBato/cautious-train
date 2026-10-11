@@ -1,0 +1,88 @@
+/* Dropdown grouping for the rules page. Builds on index.css variables. */
+
+.rules-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.rules-toolbar button {
+    background: none;
+    border: 2px solid darkolivegreen;
+    border-radius: 7px;
+    color: var(--fg);
+    padding: 2px 14px;
+    font-size: 12pt;
+}
+
+.rules-toolbar button:hover {
+    background-color: darkolivegreen;
+    color: #fff;
+}
+
+details.rule-group {
+    border: 3px solid darkolivegreen;
+    border-radius: 15px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    background-color: var(--bg);
+}
+
+details.rule-group > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 20px;
+    background-color: darkolivegreen;
+    color: #fff;
+    font-family: var(--brand-font-stack);
+    font-size: 1.6em;
+    user-select: none;
+}
+
+details.rule-group > summary::-webkit-details-marker {
+    display: none;
+}
+
+details.rule-group > summary::after {
+    content: "";
+    flex: none;
+    width: 0.5em;
+    height: 0.5em;
+    border-right: 3px solid currentColor;
+    border-bottom: 3px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+}
+
+details.rule-group[open] > summary::after {
+    transform: rotate(-135deg);
+}
+
+details.rule-group > summary:hover {
+    filter: brightness(1.12);
+}
+
+details.rule-group > summary:focus-visible {
+    outline: 3px solid var(--accent-1);
+    outline-offset: -3px;
+}
+
+details.rule-group .group-content {
+    padding: 16px 24px 8px;
+}
+
+@media(max-width: 768px) {
+    details.rule-group > summary {
+        font-size: 1.2em;
+        padding: 8px 14px;
+    }
+
+    details.rule-group .group-content {
+        padding: 12px 14px 4px;
+    }
+}

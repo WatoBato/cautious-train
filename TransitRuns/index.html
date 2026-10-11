@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+Transit Speedrunning Speedrun Rules - TransitRuns</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="TransitRuns is a global database of times for transit speedrunning - the pursuit of visiting all stations on a public transit system as fast as possible.">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/index.css" />
+        <link rel="stylesheet" href="rules.css" />
+                <script src="static/jquery-3.7.1.min.js"></script>
+        <script src="static/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <script>
+
+function get_system_theme() {
+    /*
+        Function for getting the system color scheme
+    */
+
+    theme = "dark";
+    if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+        theme = "light";
+    }
+
+    return theme;
+}
+
+function toggle_saved_theme() {
+    /*
+        Function for toggling between the two themes saved to local storage
+        Returns:
+            Value stored in local storage
+    */
+
+    // Gets Current Value
+    if (localStorage.getItem("theme")) {
+        theme = localStorage.getItem("theme");
+    }
+    else {
+        theme = get_system_theme();
+    }
+
+    // Sets the stored value as the opposite
+    if (theme === "light") {
+        localStorage.setItem("theme", "dark");
+    }
+    else {
+        localStorage.setItem("theme", "light");
+    }
+
+    return localStorage.getItem("theme");
+}
+
+function switch_theme_rules() {
+    /*
+        Function for switching the rules for perfers-color-scheme
+        Goes through each style sheet file, then each rule within each stylesheet
+        and looks for any rules that require a prefered colorscheme,
+        if it finds one that requires light theme then it makes it require dark theme / vise
+        versa. The idea is that it will feel as though the themes switched even if they haven't.
+    */
+
+    for (var sheet_file = 0; sheet_file < document.styleSheets.length; sheet_file++) {
+        try {
+            for (var sheet_rule = 0; sheet_rule < document.styleSheets[sheet_file].cssRules.length; sheet_rule++) {
+                rule = document.styleSheets[sheet_file].cssRules[sheet_rule];
+
+                if (rule && rule.media && rule.media.mediaText.includes("prefers-color-scheme")) {
+                    rule_media = rule.media.mediaText;
+
+                    if (rule_media.includes("light")) {
+                        new_rule_media = rule_media.replace("light", "dark");
+                    }
+                    if (rule_media.includes("dark")) {
+                        new_rule_media = rule_media.replace("dark", "light");
+                    }
+                    rule.media.deleteMedium(rule_media);
+                    rule.media.appendMedium(new_rule_media);
+                }
+            }
+        }
+        catch (e) {
+            broken_sheet = document.styleSheets[sheet_file].href;
+            console.warn(broken_sheet + " broke something with theme toggle : " + e);
+        }
+    }
+}
+
+function toggle_theme() {
+    /*
+        Toggles the current theme used
+    */
+    stored_theme = toggle_saved_theme();
+    switch_theme_rules();
+}
+
+window.matchMedia('(prefers-color-scheme: dark)')
+    /*
+        This makes it such that if a user changes the theme on their
+        browser and they have a preferred theme, the page maintains its prefered theme.
+    */
+    .addEventListener("change", event => {
+        if (localStorage.getItem("theme")) {
+            switch_theme_rules(); // Switches Theme every time the prefered color gets updated
+        }
+    }
+)
+
+if (localStorage.getItem("theme")) {
+    if (get_system_theme() != localStorage.getItem("theme")) {
+        switch_theme_rules();
+    }
+}
+
+        </script>
+
+
+        <header>
+            
+            <div class="headbar">
+                <div class="headbar-text">
+                
+                <a href="https://www.transitruns.org/login" class="headbar-item">Login</a> | <a href="https://www.transitruns.org/register" class="headbar-item">Register</a>
+                
+                </div>
+                <div class="left-container">
+                    &nbsp;
+                    <a href="javascript:toggle_theme();">
+                        <span id="icon-sun">🌞</span>
+                        <span id="icon-moon">🌚</span>
+                    </a>
+                </div>
+            </div>
+            <nav id="nav-top" class="navbar navbar-expand-lg">
+                <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#collapser" aria-controls="collapser" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon hamburger-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-lg-7 col-12 px-0" id="collapser">
+                    <div class="navbar-nav">
+                        <ul class="nav-list">
+                            <br>
+                            <li><a class="nav-link" href="https://www.transitruns.org/">Home</a></li>
+                            <li><a class="nav-link" href="https://www.transitruns.org/leaderboards">Leaderboards</a></li>
+                            <li><a class="nav-link" href="https://www.transitruns.org/about">About Us</a></li>
+                            <li><a class="nav-link" href="https://www.transitruns.org/rules">Speedrun Rules</a></li>
+                            <li><a class="nav-link" href="https://www.transitruns.org/faqs">FAQs</a></li>
+                            <li><a class="nav-link" href="https://www.transitruns.org/feedback">Give Feedback</a></li>
+                            <li><a class="nav-link" href="https://ko-fi.com/transitruns">Donate</a></li>
+                            <li class="discord"><a class="nav-link" href="https://discord.gg/VkkhehU6P2">Join our Discord</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-12 px-0">
+                    <img id="banner-img" class="img-fluid feather-edge" style="width: 100%; height: 300px; border-radius: 0 0 20px 0; object-fit: cover;" src="static/landing.png" />
+                </div>
+            </nav>
+
+            
+            
+<br>
+<h1>Transit Speedrunning Rules</h1>
+
+        </header>
+        <main>
+
+<div class="body-box">
+    <br>
+    <p>Please note that these rules are general. There may be minor variations to account for the specifics of a particular transit system. They are intended to ensure fair and healthy competition, and we hope that you do not find them restrictive.</p>
+    <p>Please read your category's page and the FAQs before attempting a run. If you are attempting a new category or have any other questions, please reach out to us on our Discord or at <b>transitrunsstaff@gmail.com</b>. We would much rather help you out ahead of time than have to invalidate a run because of a misunderstanding.</p>
+    <p>Even if you submit a run for a transit system we have not yet tracked, we will still expect you to abide by these rules to the best of your ability. However, we are open to hearing from you if there is anything that makes that system unique and gets in the way of some of our rules.</p>
+    <p><i>Last Updated 2 March 2026</i></p>
+    <div class="rules-toolbar">
+        <button type="button" onclick="setAllGroups(true)">Expand all</button>
+        <button type="button" onclick="setAllGroups(false)">Collapse all</button>
+    </div>
+    <details class="rule-group" id="definitions">
+        <summary>Definitions</summary>
+        <div class="group-content">
+    <ul class="rules-list">
+        <li><b>Transfer</b>: Changing between two vehicles, or travelling between two stations on foot. Turning back on the same vehicle at the end of a line is also considered a transfer for our purposes.</li>
+        <li><b>Nodes</b>: The set of stations that includes: the start station, the end station, and all locations of transfers.</li>
+        <li><b>Segments</b>: The individual pieces of the route. A new segment starts when you get off a vehicle or arrive at a new station after travelling on foot.</li>
+    </ul>
+        </div>
+    </details>
+    <details class="rule-group" id="basics">
+        <summary>The Basics</summary>
+        <div class="group-content">
+    <ol class="rules-list">
+        <li>To complete a run, a runner must visit every station within the designated category.</li>
+        <ol type="a">
+            <li>Stations that are only open on select days (such as stations that serve special events) do not have to be visited. However, if the station has at least one service every day of the week, you must visit it.</li>
+            <li>If a system has multiple stations or lines that don't open on a particular day with some regularity (such as stations that aren't open on weekends), we may choose to entertain a category specific for those days. See our <a href="https://www.transitruns.org/gotrain">GO Train</a> leaderboard for an example of this.</li>
+        </ol>
+        <li>To visit a station, a runner must be aboard a vehicle of the designated system in fixed-route public service that arrives at and/or departs from the station.</li>
+        <ol type="a">
+            <li>If a station is served by multiple lines or has multiple platforms, it only needs to be visited on one line at one platform.</li>
+            <li>Stations bypassed by express and limited services do not count as visited. The doors must open at every station.</li>
+            <li>However, if a station is stopped at only by request, the vehicle does not need to stop nor do the doors need to open to count as a visit.</li>
+        </ol>
+        <li>If unusual circumstances do not allow a vehicle to stop at one or more stations:</li>
+        <ol type="a">
+            <li>If a vehicle bypasses a mid-line station at which it would normally stop, the station is counted as visited.</li>
+            <li>If the agency operates dedicated replacement buses or designates existing bus routes as replacement services, these should be used to visit the closed stations.</li>
+            <li>Otherwise, stations must be visited by another approved mode of transportation.</li>
+        </ol>
+        <li>During a run, a runner may only travel by approved methods of transportation listed on <a href="https://www.transitruns.org/faqs">our FAQ page</a>.</li>
+        <li>Generally, a run will be completed in one go, but we understand if you need to take breaks (especially for a run that spans multiple days). If you decide to do so, please keep the following in mind:</li>
+        <ul>
+            <li>If using a stopwatch as your timing method, it must remain running during the break.</li>
+            <li>You must resume the run from the exact location that you were when the break started.</li>
+            <li>You may do whatever you like during the break, including using disallowed modes of transportation, and you don't even have to film anything. However, you must make it clear in your footage when the break starts and ends, and that you are in the same place at both times.</li>
+            <li>You cannot tick off any new stations during the break.</li>
+        </ul>
+    </ol>
+        </div>
+    </details>
+    <details class="rule-group" id="submission">
+        <summary>Submission &amp; Evidence</summary>
+        <div class="group-content">
+    <ol class="rules-list" start="6">
+        <li>You need an active TransitRuns account to submit a speedrun to the leaderboards. For team runs, one account should handle the submission; duplicate submissions will not speed up the verification process.</li>
+        <li>Runners are REQUIRED to submit the following:</li>
+        <ol type="a">
+            <li>Who else took part in the run (including TransitRuns usernames if applicable);</li>
+            <li>What transit system was run (specific categories if applicable);</li>
+            <li>The date on which the run was performed;</li>
+            <li>The local time when the run began;</li>
+            <li>The length of the run in <code>HH:MM:SS</code> format, unless following a timing standard below;</li>
+            <li>At least one acceptable form of evidence below (additional evidence helps speed up the verification process); and</li>
+            <li>Any additional comments or service disruptions that may have impacted your run.</li>
+        </ol>
+        <li>An acceptable key piece of evidence must follow the standards below:</li>
+        <ol type="a">
+            <li>Your evidence must allow us to retrace your entire route. It must make all segments clear (which lines and stations were used at which times).</li>
+            <li>Examples of acceptable evidence include:</li>
+            <ol type="i">
+                <li>Video recordings of parts of the run, especially at key nodes (transfer points); or</li>
+                <li>Photos with unmodified digital timestamps taken at stations.</li>
+            </ol>
+            <li>When using photo or video evidence, we recommend including footage where the stopwatch and local time (such as from a departure board or clock) are visible, especially at transfer points.</li>
+            <li>Photo and video evidence must make it very clear which station you are at, such as by showing a station sign, an information screen aboard the vehicle, a clip with an audible announcement, or other identifying features.</li>
+        </ol>
+        <li>In addition, the items below are not required but will help us verify your run:</li>
+        <ol type="a">
+            <li>A GPS log of the entire run, such as an unmodified Google Maps Timeline or Strava;</li>
+            <li>A video or live stream of the whole run;</li>
+            <li>Vehicle numbers travelled on during the run;</li>
+            <li>A logbook of either local time or elapsed time at stations; or</li>
+            <li>Witness statements from individuals trusted by TransitRuns staff.</li>
+        </ol>
+    </ol>
+        </div>
+    </details>
+    <details class="rule-group" id="timing">
+        <summary>Recommended Timing Standards</summary>
+        <div class="group-content">
+    <i style="font-size: larger;">If you have a device that can record video and an additional stopwatch:</i>
+    <p>We recommend taking a video at the start of the run that includes the vehicle you're boarding, an identifying station feature, and something that shows the local time. The video should also include the doors closing, with a stopwatch shown that starts when the doors fully close. Including a clock with seconds visible either on another device before or after the stopwatch starts is also highly recommended. We recommend your clock app or <a href="http://time.is">time.is</a> to show your local time with seconds.</p>
+    <p>The end of the run should follow the same guidelines, with the stopwatch stopping just after the doors begin to open, not when you step foot on the platform. Continue to show identifying station features and a clock with seconds visible.</p>
+    <p>For transfers, one continuous video or two videos showing you leaving one vehicle and boarding another is recommended, with the local time and elapsed time shown at least once. If two videos are used for a transfer, we recommend showing the local time and elapsed time in both videos.</p>
+    <br>
+    <i style="font-size: larger;">If you only have one device that can screen record a camera app:</i>
+    <p>We recommend starting a screen recording with your device microphone on, briefly showing the local time on your clock app or <a href="http://time.is">time.is</a>, and then switching to the camera app (you do not need to press record on the camera app, just have it open with the image visible). The screen recording should include the vehicle you're boarding, an identifying station feature, and some sort of timing clock. A few seconds before the doors close, the screen recording should switch to a stopwatch that starts when the doors fully close.</p>
+    <p>The end of the run should follow the same guidelines, with the stopwatch stopping just after the doors begin to open, not when you step foot on the platform. Continue to show identifying station features and the local time from your clock app or <a href="http://time.is">time.is</a> at least once.</p>
+    <p>For transfers, one continuous screen recording or two screen recordings with the camera app showing you leaving one vehicle and boarding another is recommended, with the local time and elapsed time shown at least once by switching to your clock app or <a href="http://time.is">time.is</a>. If two videos are used for a transfer, we recommend showing the local time and elapsed time in both videos.</p>
+        </div>
+    </details>
+    <br>
+</div>
+
+<br>
+<br>
+<br>
+
+        </main>
+
+        <script>
+            function setAllGroups(open) {
+                document.querySelectorAll("details.rule-group").forEach(d => d.open = open);
+            }
+
+            function openHashGroup() {
+                // Lets links like #basics open the matching dropdown
+                const target = location.hash && document.getElementById(location.hash.slice(1));
+                if (target && target.tagName === "DETAILS") {
+                    target.open = true;
+                    target.scrollIntoView();
+                }
+            }
+
+            window.addEventListener("hashchange", openHashGroup);
+            document.addEventListener("DOMContentLoaded", openHashGroup);
+        </script>
+    </body>
+</html>
