@@ -8,7 +8,7 @@ Transit Speedrunning Rules - TransitRuns</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="static/bootstrap.min.css" />
         <link rel="stylesheet" href="static/index.css" />
-        <link rel="stylesheet" href="rules.css" />
+        <link rel="stylesheet" href="rules.css?v=2026-10-11b" />
                 <script src="static/jquery-3.7.1.min.js"></script>
         <script src="static/bootstrap.bundle.min.js"></script>
     </head>
@@ -366,7 +366,7 @@ if (localStorage.getItem("theme")) {
     <div class="tab-content">
         <div class="tab-pane fade show active" id="mapSingle" role="tabpanel" aria-labelledby="mapSingleTab" tabindex="0">
             <div class="mapPane">
-                <svg viewBox="0 0 320 120" role="img" aria-label="One line with three single stops. Visit each stop once, travelling either way.">
+                <svg viewBox="0 0 320 120" width="320" height="120" role="img" aria-label="One line with three single stops. Visit each stop once, travelling either way.">
                     <line class="mapArrowLine" x1="115" y1="24" x2="205" y2="24"/>
                     <polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(209 24)"/>
                     <polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(111 24) rotate(180)"/>
@@ -387,7 +387,7 @@ if (localStorage.getItem("theme")) {
         </div>
         <div class="tab-pane fade" id="mapPaired" role="tabpanel" aria-labelledby="mapPairedTab" tabindex="0">
             <div class="mapPane">
-                <svg viewBox="0 0 320 120" role="img" aria-label="Two parallel lines with stops paired across both. One visit per pair, on either side.">
+                <svg viewBox="0 0 320 120" width="320" height="120" role="img" aria-label="Two parallel lines with stops paired across both. One visit per pair, on either side.">
                     <line class="mapRide" x1="20" y1="45" x2="300" y2="45"/>
                     <line class="mapTrack" x1="20" y1="45" x2="300" y2="45"/>
                     <line class="mapTrackFaint" x1="20" y1="75" x2="300" y2="75"/>
@@ -407,7 +407,7 @@ if (localStorage.getItem("theme")) {
         </div>
         <div class="tab-pane fade" id="mapUnpaired" role="tabpanel" aria-labelledby="mapUnpairedTab" tabindex="0">
             <div class="mapPane">
-                <svg viewBox="0 0 320 120" role="img" aria-label="Two lines with stops that are not paired. Visit every stop on both sides.">
+                <svg viewBox="0 0 320 120" width="320" height="120" role="img" aria-label="Two lines with stops that are not paired. Visit every stop on both sides.">
                     <path class="mapRide" d="M20 60 L60 60 L80 35 L240 35 L260 60 L300 60 M60 60 L80 85 L240 85 L260 60"/>
                     <path class="mapTrack" d="M20 60 L60 60 L80 35 L240 35 L260 60 L300 60 M60 60 L80 85 L240 85 L260 60"/>
                     <polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(160 35)"/>
@@ -428,7 +428,7 @@ if (localStorage.getItem("theme")) {
         </div>
         <div class="tab-pane fade" id="mapNoIcons" role="tabpanel" aria-labelledby="mapNoIconsTab" tabindex="0">
             <div class="mapPane">
-                <svg viewBox="0 0 320 120" role="img" aria-label="A network with no stop icons, split into three track sections. Ride every section.">
+                <svg viewBox="0 0 320 120" width="320" height="120" role="img" aria-label="A network with no stop icons, split into three track sections. Ride every section.">
                     <path class="mapRide" d="M20 80 L300 80 M150 80 L190 35 L300 35"/>
                     <path class="mapTrack" d="M20 80 L300 80 M150 80 L190 35 L300 35"/>
                     <circle class="mapJunction" cx="150" cy="80" r="5"/>
@@ -456,10 +456,10 @@ if (localStorage.getItem("theme")) {
     </div>
 
     <ul class="mapLegend" aria-label="Diagram key">
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle class="mapStopMust" cx="12" cy="12" r="8"/></svg> Must visit</li>
-        <li><svg viewBox="0 0 40 24" aria-hidden="true"><line class="mapRide" x1="6" y1="12" x2="34" y2="12"/><line class="mapTrack" x1="6" y1="12" x2="34" y2="12"/></svg> Must ride</li>
-        <li><svg viewBox="0 0 40 24" aria-hidden="true"><line class="mapTrackFaint" x1="6" y1="12" x2="34" y2="12"/></svg> No need to ride</li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(12 12)"/></svg> Direction of travel</li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle class="mapStopMust" cx="12" cy="12" r="8"/></svg> Must visit</li>
+        <li><svg viewBox="0 0 40 24" width="33" height="20" aria-hidden="true"><line class="mapRide" x1="6" y1="12" x2="34" y2="12"/><line class="mapTrack" x1="6" y1="12" x2="34" y2="12"/></svg> Must ride</li>
+        <li><svg viewBox="0 0 40 24" width="33" height="20" aria-hidden="true"><line class="mapTrackFaint" x1="6" y1="12" x2="34" y2="12"/></svg> No need to ride</li>
+        <li><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(12 12)"/></svg> Direction of travel</li>
     </ul>
         </div>
     </details>
@@ -479,7 +479,7 @@ if (localStorage.getItem("theme")) {
     <div class="tab-content">
         <div class="tab-pane fade show active" id="specialDirection" role="tabpanel" aria-labelledby="specialDirectionTab" tabindex="0">
             <div class="mapPane">
-                <svg viewBox="0 0 320 120" role="img" aria-label="A one-way station with a platform on one track only. Trains on the other track pass without stopping, which does not count.">
+                <svg viewBox="0 0 320 120" width="320" height="120" role="img" aria-label="A one-way station with a platform on one track only. Trains on the other track pass without stopping, which does not count.">
                     <line class="mapRide" x1="20" y1="45" x2="300" y2="45"/>
                     <line class="mapTrack" x1="20" y1="45" x2="300" y2="45"/>
                     <line class="mapTrackFaint" x1="20" y1="80" x2="300" y2="80"/>
@@ -499,7 +499,7 @@ if (localStorage.getItem("theme")) {
                 </div>
             </div>
             <div class="mapPane">
-                <svg viewBox="0 0 320 120" role="img" aria-label="A line ending in a loop that trains run round in one direction. Each loop stop needs its own visit.">
+                <svg viewBox="0 0 320 120" width="320" height="120" role="img" aria-label="A line ending in a loop that trains run round in one direction. Each loop stop needs its own visit.">
                     <path class="mapRide" d="M20 60 L190 60 A40 40 0 1 1 190 60.01"/>
                     <path class="mapTrack" d="M20 60 L190 60 A40 40 0 1 1 190 60.01"/>
                     <polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(201.7 31.7) rotate(-45)"/>

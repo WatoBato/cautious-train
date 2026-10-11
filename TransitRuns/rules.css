@@ -184,6 +184,11 @@ details.rule-group .tab-content {
     padding: 14px 0 4px;
 }
 
+/* Panels get focus when reached by a #link; the tab buttons already show focus */
+details.rule-group .tab-pane:focus {
+    outline: none;
+}
+
 /* Tables that stack into labelled cards on phones */
 
 .caseTable {
