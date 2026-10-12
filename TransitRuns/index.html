@@ -8,7 +8,7 @@ Transit Speedrunning Rules - TransitRuns</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="static/bootstrap.min.css" />
         <link rel="stylesheet" href="static/index.css" />
-        <link rel="stylesheet" href="rules.css?v=2026-10-12b" />
+        <link rel="stylesheet" href="rules.css?v=2026-10-12e" />
                 <script src="static/jquery-3.7.1.min.js"></script>
         <script src="static/bootstrap.bundle.min.js"></script>
     </head>
@@ -196,6 +196,76 @@ if (localStorage.getItem("theme")) {
             <tr><td data-label="Term"><b>Category</b></td><td data-label="Meaning">The set of stations (or track) a run must cover, such as All Stops. Each system's page lists potential categories.</td></tr>
         </tbody>
     </table>
+    <div class="mapPane">
+                <div class="mapPaneArt">
+                    <svg class="wideOnly" viewBox="0 0 380 115" width="380" height="115" role="img" aria-label="A route from Central to Airport: five segments (Blue Line, a three-minute walk, Route 12, Green Line, Route 7) joined by six nodes: the start, four transfers and the end.">
+                        <line class="mapTrack" x1="30" y1="60" x2="94" y2="60"/>
+                        <text class="mapSmall" x="62" y="42">Blue Line</text>
+                        <line class="mapWalk" x1="94" y1="60" x2="158" y2="60"/>
+                        <text class="mapSmall" x="126" y="42">Walk 3 min</text>
+                        <line class="mapTrack" x1="158" y1="60" x2="222" y2="60"/>
+                        <text class="mapSmall" x="190" y="42">Route 12</text>
+                        <line class="mapTrack" x1="222" y1="60" x2="286" y2="60"/>
+                        <text class="mapSmall" x="254" y="42">Green Line</text>
+                        <line class="mapTrack" x1="286" y1="60" x2="350" y2="60"/>
+                        <text class="mapSmall" x="318" y="42">Route 7</text>
+                        <circle class="mapStopMust" cx="30" cy="60" r="8"/>
+                        <text class="mapLabel mapLabelSmall" x="30" y="88">Central</text>
+                        <text class="mapSmall mapFaint" x="30" y="104">start</text>
+                        <circle class="mapNode" cx="94" cy="60" r="8"/>
+                        <text class="mapLabel mapLabelSmall" x="94" y="88">Harbour</text>
+                        <text class="mapSmall mapFaint" x="94" y="104">transfer</text>
+                        <circle class="mapNode" cx="158" cy="60" r="8"/>
+                        <text class="mapLabel mapLabelSmall" x="158" y="88">Harbour</text>
+                        <text class="mapSmall mapFaint" x="158" y="104">transfer</text>
+                        <circle class="mapNode" cx="222" cy="60" r="8"/>
+                        <text class="mapLabel mapLabelSmall" x="222" y="88">Museum</text>
+                        <text class="mapSmall mapFaint" x="222" y="104">transfer</text>
+                        <circle class="mapNode" cx="286" cy="60" r="8"/>
+                        <text class="mapLabel mapLabelSmall" x="286" y="88">University</text>
+                        <text class="mapSmall mapFaint" x="286" y="104">transfer</text>
+                        <circle class="mapStopMust" cx="350" cy="60" r="8"/>
+                        <text class="mapLabel mapLabelSmall" x="350" y="88">Airport</text>
+                        <text class="mapSmall mapFaint" x="350" y="104">end</text>
+                    </svg>
+                    <svg class="phoneOnly" viewBox="0 0 260 300" width="260" height="300" role="img" aria-label="A route from Central to Airport: five segments (Blue Line, a three-minute walk, Route 12, Green Line, Route 7) joined by six nodes: the start, four transfers and the end.">
+                        <line class="mapTrack" x1="24" y1="20" x2="24" y2="72"/>
+                        <text class="mapSmall mapFaint mapTextStart" x="44" y="50">Blue Line</text>
+                        <line class="mapWalk" x1="24" y1="72" x2="24" y2="124"/>
+                        <text class="mapSmall mapFaint mapTextStart" x="44" y="102">Walk 3 min</text>
+                        <line class="mapTrack" x1="24" y1="124" x2="24" y2="176"/>
+                        <text class="mapSmall mapFaint mapTextStart" x="44" y="154">Route 12</text>
+                        <line class="mapTrack" x1="24" y1="176" x2="24" y2="228"/>
+                        <text class="mapSmall mapFaint mapTextStart" x="44" y="206">Green Line</text>
+                        <line class="mapTrack" x1="24" y1="228" x2="24" y2="280"/>
+                        <text class="mapSmall mapFaint mapTextStart" x="44" y="258">Route 7</text>
+                        <circle class="mapStopMust" cx="24" cy="20" r="9"/>
+                        <text class="mapLabel mapTextStart" x="44" y="25">Central</text>
+                        <text class="mapSmall mapFaint mapTextEnd" x="250" y="25">start</text>
+                        <circle class="mapNode" cx="24" cy="72" r="9"/>
+                        <text class="mapLabel mapTextStart" x="44" y="77">Harbour</text>
+                        <text class="mapSmall mapFaint mapTextEnd" x="250" y="77">transfer</text>
+                        <circle class="mapNode" cx="24" cy="124" r="9"/>
+                        <text class="mapLabel mapTextStart" x="44" y="129">Harbour</text>
+                        <text class="mapSmall mapFaint mapTextEnd" x="250" y="129">transfer</text>
+                        <circle class="mapNode" cx="24" cy="176" r="9"/>
+                        <text class="mapLabel mapTextStart" x="44" y="181">Museum</text>
+                        <text class="mapSmall mapFaint mapTextEnd" x="250" y="181">transfer</text>
+                        <circle class="mapNode" cx="24" cy="228" r="9"/>
+                        <text class="mapLabel mapTextStart" x="44" y="233">University</text>
+                        <text class="mapSmall mapFaint mapTextEnd" x="250" y="233">transfer</text>
+                        <circle class="mapStopMust" cx="24" cy="280" r="9"/>
+                        <text class="mapLabel mapTextStart" x="44" y="285">Airport</text>
+                        <text class="mapSmall mapFaint mapTextEnd" x="250" y="285">end</text>
+                    </svg>
+                </div>
+                <div>
+                    <h3>Nodes and segments</h3>
+                    <p>Each line is a segment. Each dot is a node: the start, the end, or a transfer.</p>
+                    <p><b>A walk between stations is its own segment.</b></p>
+                    <p class="mapExample">This is the sample route log from <a href="#submitEvidence">Section 9</a>.</p>
+                </div>
+            </div>
         </div>
     </details>
 
@@ -239,6 +309,27 @@ if (localStorage.getItem("theme")) {
                     <li>Otherwise, visit the stations by another approved way of travel (<a href="#transport">Section 5</a>).</li>
                 </ol>
             </ol>
+            <div class="mapPane">
+                <svg viewBox="0 0 320 150" width="320" height="150" role="img" aria-label="A train passes through a closed station where it would normally stop, which counts. Beyond that the line is closed, and a replacement bus serves the last two stations.">
+                    <line class="mapRide" x1="15" y1="55" x2="185" y2="55"/>
+                    <line class="mapTrack" x1="15" y1="55" x2="185" y2="55"/>
+                    <line class="mapTrackFaint" x1="185" y1="55" x2="305" y2="55"/>
+                    <path class="mapBus" d="M180 65 Q180 105 210 105 L295 105 M245 105 L245 65 M295 105 L295 65"/>
+                    <circle class="mapStopMust" cx="40" cy="55" r="10"/>
+                    <circle class="mapStopMust" cx="110" cy="55" r="10"/>
+                    <circle class="mapStopMust" cx="180" cy="55" r="10"/>
+                    <circle class="mapStopMust" cx="245" cy="55" r="10"/>
+                    <circle class="mapStopMust" cx="295" cy="55" r="10"/>
+                    <text class="mapLabel" x="110" y="28">closed, passed</text>
+                    <text class="mapLabel" x="250" y="28">line closed</text>
+                    <text class="mapLabel" x="245" y="132">replacement bus</text>
+                </svg>
+                <div>
+                    <h3>Closures</h3>
+                    <p>If your train passes through a closed station where it would normally stop, the station counts (rule 2.3a).</p>
+                    <p><b>If no trains reach a station, use the replacement bus (rule 2.3b), or another approved way of travel (rule 2.3c).</b></p>
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="basicsTravel" role="tabpanel" aria-labelledby="basicsTravelTab" tabindex="0">
             <ol class="rules-list" start="4">
@@ -464,6 +555,30 @@ if (localStorage.getItem("theme")) {
             </table>
         </div>
         <div class="tab-pane fade" id="specialStopping" role="tabpanel" aria-labelledby="specialStoppingTab" tabindex="0">
+            <div class="mapPane">
+                <svg viewBox="0 0 320 145" width="320" height="145" role="img" aria-label="Top: a stopping train calls at all three stations, so the middle one counts. Bottom: an express train passes the middle station without stopping, so it does not count.">
+                    <line class="mapRide" x1="20" y1="45" x2="300" y2="45"/>
+                    <line class="mapTrack" x1="20" y1="45" x2="300" y2="45"/>
+                    <line class="mapTrack" x1="20" y1="105" x2="300" y2="105"/>
+                    <polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(110 45)"/>
+                    <polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(110 105)"/>
+                    <circle class="mapStopMust" cx="60" cy="45" r="10"/>
+                    <circle class="mapStopMust" cx="160" cy="45" r="10"/>
+                    <circle class="mapStopMust" cx="260" cy="45" r="10"/>
+                    <circle class="mapStopMust" cx="60" cy="105" r="10"/>
+                    <circle class="mapStop" cx="160" cy="105" r="10"/>
+                    <line class="mapCross" x1="152" y1="97" x2="168" y2="113"/>
+                    <line class="mapCross" x1="168" y1="97" x2="152" y2="113"/>
+                    <circle class="mapStopMust" cx="260" cy="105" r="10"/>
+                    <text class="mapLabel" x="160" y="22">stopping train: counts</text>
+                    <text class="mapLabel" x="160" y="138">express passes: no visit</text>
+                </svg>
+                <div>
+                    <h3>Express and skip-stop</h3>
+                    <p>A station only counts when your train stops there, or could stop there for a request.</p>
+                    <p><b>If your train was due to stop but ran express without warning, the station still counts.</b></p>
+                </div>
+            </div>
             <table class="caseTable">
                 <thead>
                     <tr><th scope="col">Situation</th><th scope="col">Counts?</th><th scope="col">Action</th></tr>
@@ -482,7 +597,7 @@ if (localStorage.getItem("theme")) {
                     <tr>
                         <td data-label="Situation"><b>Drop-off only or pick-up only stop</b></td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Yes</span></td>
-                        <td data-label="What to do">You must either pass through, or if arriving or departing, you must ride the entire relevant section.</td>
+                        <td data-label="What to do">They count as stops all the same. Visit them aboard a moving vehicle, the same way as any other stop.</td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Only some doors open</b><br>Short platforms or selective door opening.</td>
@@ -608,7 +723,7 @@ if (localStorage.getItem("theme")) {
                 <li>Scooters, skateboards and other small vehicles</li>
                 <li>Private cars, taxis and ride-hailing</li>
                 <li>Paratransit and chartered vehicles</li>
-                <li>Private boats and aircraft</li>
+                <li>Private boats (excluding jet skis) and aircraft</li>
                 <li><i>This is a non exhaustive list.</i></li>
             </ul>
         </div>
@@ -635,6 +750,32 @@ if (localStorage.getItem("theme")) {
         <li>You may do whatever you like during the break, including travel by banned means, and you don't need to film it.</li>
         <li>You cannot visit any stations during the break.</li>
     </ol>
+    <div class="mapPane">
+                <svg viewBox="0 0 340 150" width="340" height="150" role="img" aria-label="A run timeline. The stopwatch keeps running from start to finish. During the break in the middle no stations count. The break starts and ends in the same place, on film.">
+                    <text class="mapLabel" x="170" y="16">stopwatch keeps running</text>
+                    <path class="mapMarker" d="M20 32 L20 24 L320 24 L320 32"/>
+                    <rect class="breakRun" x="20" y="60" width="120" height="16" rx="3"/>
+                    <rect class="breakPause" x="140" y="60" width="80" height="16"/>
+                    <rect class="breakRun" x="220" y="60" width="100" height="16" rx="3"/>
+                    <circle class="breakTick" cx="45" cy="68" r="4"/>
+                    <circle class="breakTick" cx="80" cy="68" r="4"/>
+                    <circle class="breakTick" cx="115" cy="68" r="4"/>
+                    <circle class="breakTick" cx="245" cy="68" r="4"/>
+                    <circle class="breakTick" cx="280" cy="68" r="4"/>
+                    <circle class="breakTick" cx="305" cy="68" r="4"/>
+                    <text class="mapSmall" x="180" y="52">no stations</text>
+                    <line class="mapMarker" x1="140" y1="56" x2="140" y2="98"/>
+                    <line class="mapMarker" x1="220" y1="56" x2="220" y2="116"/>
+                    <text class="mapLabel" x="140" y="112">break starts</text>
+                    <text class="mapLabel" x="225" y="130">break ends</text>
+                    <text class="mapSmall mapFaint" x="180" y="146">same place, both on film</text>
+                </svg>
+                <div>
+                    <h3>How a break works</h3>
+                    <p>The stopwatch never stops, and no stations count while you are on a break.</p>
+                    <p><b>Film the start and end of the break, in the same place.</b></p>
+                </div>
+            </div>
         </div>
     </details>
 
@@ -772,7 +913,7 @@ if (localStorage.getItem("theme")) {
         <div class="tab-pane fade" id="timingTwoDevices" role="tabpanel" aria-labelledby="timingTwoDevicesTab" tabindex="0">
             <p><i>If you have a device that can record video, and a second device for a stopwatch:</i></p>
             <div class="filmDiagramWrap">
-                <svg class="filmDiagram" viewBox="0 0 640 240" width="640" height="240" role="img" aria-label="Device 1 records video. In the shot are the vehicle, a station sign, a clock showing local time, and device 2 running the stopwatch.">
+                <svg class="filmDiagram wideOnly" viewBox="0 0 640 240" width="640" height="240" role="img" aria-label="Device 1 records video. In the shot are the vehicle, a station sign, a clock showing local time, and device 2 running the stopwatch.">
                     <rect class="filmPhone" x="30" y="55" width="96" height="150" rx="14"/>
                     <rect class="filmScreen" x="40" y="70" width="76" height="120" rx="4"/>
                     <circle class="filmRecDot" cx="54" cy="84" r="6"/>
@@ -798,6 +939,37 @@ if (localStorage.getItem("theme")) {
                     <rect class="filmPhone" x="470" y="118" width="80" height="90" rx="10"/>
                     <text class="filmDigits" x="510" y="168">00:00:00</text>
                     <text class="filmCaption" x="510" y="110">Device 2: stopwatch</text>
+                </svg>
+                <svg class="filmDiagram filmTall phoneOnly" viewBox="0 0 380 450" width="380" height="450" role="img" aria-label="Device 1 records video. In the shot are the vehicle, a station sign, a clock showing local time, and device 2 running the stopwatch.">
+                    <g transform="translate(112 -45)">
+                        <rect class="filmPhone" x="30" y="55" width="96" height="150" rx="14"/>
+                        <rect class="filmScreen" x="40" y="70" width="76" height="120" rx="4"/>
+                        <circle class="filmRecDot" cx="54" cy="84" r="6"/>
+                        <text class="filmSmall" x="64" y="89">REC</text>
+                        <circle class="filmIconLine" cx="78" cy="135" r="17"/>
+                        <circle class="filmIconLine" cx="78" cy="135" r="6"/>
+                        <text class="filmCaption" x="78" y="228">Device 1 records</text>
+                    </g>
+                    <line class="filmCone" x1="150" y1="160" x2="12" y2="240"/>
+                    <line class="filmCone" x1="230" y1="160" x2="368" y2="240"/>
+                    <g transform="translate(-245 222)">
+                        <rect class="filmScene" x="250" y="18" width="370" height="204" rx="14"/>
+                        <text class="filmSmall" x="264" y="40">In the shot</text>
+                        <rect class="filmSign" x="270" y="52" width="130" height="26" rx="4"/>
+                        <text class="filmSignText" x="335" y="70">Central</text>
+                        <rect class="filmTrain" x="270" y="92" width="170" height="100" rx="10"/>
+                        <rect class="filmWindow" x="282" y="108" width="28" height="24" rx="3"/>
+                        <rect class="filmWindow" x="400" y="108" width="28" height="24" rx="3"/>
+                        <rect class="filmDoor" x="322" y="112" width="31" height="80"/>
+                        <rect class="filmDoor" x="357" y="112" width="31" height="80"/>
+                        <circle class="filmIconLine" cx="572" cy="52" r="18"/>
+                        <line class="filmIconLine" x1="572" y1="52" x2="572" y2="40"/>
+                        <line class="filmIconLine" x1="572" y1="52" x2="582" y2="57"/>
+                        <text class="filmCaption" x="572" y="88">local time</text>
+                        <rect class="filmPhone" x="470" y="118" width="80" height="90" rx="10"/>
+                        <text class="filmDigits" x="510" y="168">00:00:00</text>
+                        <text class="filmCaption" x="510" y="110">Device 2</text>
+                    </g>
                 </svg>
             </div>
             <ol class="filmSteps">
@@ -910,7 +1082,6 @@ if (localStorage.getItem("theme")) {
         <div class="group-content">
     <ol class="rules-list">
         <li>We reserve the right to change our rules at any time, and apply them at our discretion. When we do, we update the date at the top of this page.</li>
-        <li>We judge each run by the rules in force on the day it was run.</li>
         <li>Questions, or a case these rules don't cover? Ask us on our <a href="https://discord.gg/VkkhehU6P2">Discord</a> or at <b>transitrunsstaff@gmail.com</b>.</li>
     </ol>
         </div>

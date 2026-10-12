@@ -436,6 +436,85 @@ details.rule-group .tab-pane:focus {
     stroke-width: 2;
 }
 
+.mapWalk {
+    stroke: var(--fg);
+    stroke-width: 3;
+    stroke-dasharray: 2 5;
+    stroke-linecap: round;
+}
+
+.mapNode {
+    fill: var(--bg);
+    stroke: var(--fg);
+    stroke-width: 3;
+}
+
+.mapSmall {
+    fill: var(--fg);
+    font-family: var(--base-font-stack);
+    font-size: 11px;
+    text-anchor: middle;
+}
+
+.mapLabelSmall {
+    font-size: 12px;
+}
+
+.mapFaint {
+    fill-opacity: 0.75;
+}
+
+.mapBus {
+    fill: none;
+    stroke: #458588;
+    stroke-width: 4;
+    stroke-dasharray: 8 5;
+}
+
+.mapMarker {
+    fill: none;
+    stroke: var(--fg);
+    stroke-width: 2;
+}
+
+.breakRun {
+    fill: olivedrab;
+}
+
+.breakPause {
+    fill: none;
+    stroke: var(--fg);
+    stroke-width: 2;
+    stroke-dasharray: 5 4;
+}
+
+.breakTick {
+    fill: var(--bg);
+    stroke: var(--fg);
+    stroke-width: 2;
+}
+
+.mapTextStart {
+    text-anchor: start;
+}
+
+.mapTextEnd {
+    text-anchor: end;
+}
+
+.mapLabel.mapTextStart {
+    font-size: 15px;
+}
+
+svg.phoneOnly {
+    display: none;
+}
+
+.filmTall .filmCaption,
+.filmTall .filmSmall {
+    font-size: 16px;
+}
+
 /* Route log table */
 
 .caseTable caption {
@@ -698,8 +777,16 @@ details.rule-group .tab-pane:focus {
         grid-template-columns: 1fr;
     }
 
-    .filmDiagram {
-        min-width: 520px;
+    svg.phoneOnly {
+        display: block;
+    }
+
+    svg.wideOnly {
+        display: none;
+    }
+
+    .filmTall {
+        max-width: 380px;
     }
 
     .filmFrames {
