@@ -4,6 +4,6 @@
   "private": true,
   "description": "Standalone TransitRuns speedrun rules page",
   "scripts": {
-    "start": "python3 -m http.server 3000"
+    "start": "python3 serve.py"
   }
 }
