@@ -169,97 +169,9 @@ if (localStorage.getItem("theme")) {
 <div class="body-box">
     <br>
     <p>These rules are general. Some systems need small changes, which we list on each system's page. The rules exist to keep competition fair and healthy, and we hope you don't find them limiting.</p>
-    <p>Read your category's page and the FAQs before you run. If you plan a new category or have any question, ask us on our Discord or at <b>transitrunsstaff@gmail.com</b>. We would much rather help you ahead of time than reject a run over a misunderstanding.</p>
-    <p>If you run a system we don't track yet, follow these rules as closely as you can. If something about the system gets in the way of a rule, tell us.</p>
+    <p>We reccomend reading the category rules and system page before you run. For new categories or questions, ask us on our Discord or at <b>transitrunsstaff@gmail.com</b>. We would much rather help you ahead of time than reject a run over a misunderstanding.</p>
+    <p>For new systems, follow the rules as closely as possible. If a conflict occurs in your planning, we would be happy to assist!</p>
     <p><i>Last Updated 11 October 2026</i></p>
-
-    <section class="rulesOverview" aria-labelledby="overviewHead">
-        <h2 id="overviewHead">The rules at a glance</h2>
-        <p>Each card is one rule in brief. Follow its links for the details below.</p>
-        <div class="overviewGrid">
-            <div class="overviewCard">
-                <h3><a href="#definitions">1. Definitions</a></h3>
-                <p>What we mean by station, visit, transfer and other terms.</p>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#basics">2. The Basics</a></h3>
-                <p>Visit every station in your category, aboard the system's own vehicles, with the doors open.</p>
-                <ul class="subLinks">
-                    <li><a href="#basicsVisitAll">What to visit</a></li>
-                    <li><a href="#basicsVisit">What counts</a></li>
-                    <li><a href="#basicsDisruptions">Disruptions</a></li>
-                    <li><a href="#basicsTravel">Travel</a></li>
-                </ul>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#mapRule">3. Reading the Map</a></h3>
-                <p>The official map decides what you must visit, and in which directions.</p>
-                <ul class="subLinks">
-                    <li><a href="#mapSingle">Single stops</a></li>
-                    <li><a href="#mapPaired">Paired stops</a></li>
-                    <li><a href="#mapUnpaired">Unpaired stops</a></li>
-                    <li><a href="#mapNoIcons">No stop icons</a></li>
-                </ul>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#specialStations">4. Special Stations</a></h3>
-                <p>How we handle one-way stops, loops, part-time stations and other one-offs.</p>
-                <ul class="subLinks">
-                    <li><a href="#specialDirection">One-way &amp; loops</a></li>
-                    <li><a href="#specialStopping">Stopping</a></li>
-                    <li><a href="#specialHours">Hours &amp; days</a></li>
-                    <li><a href="#specialShared">Shared stations</a></li>
-                    <li><a href="#specialClosures">Closures</a></li>
-                </ul>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#transport">5. Getting Around</a></h3>
-                <p>Between vehicles, walk, run or take public transport. Nothing private.</p>
-                <ul class="subLinks">
-                    <li><a href="#transportAllowed">Allowed</a></li>
-                    <li><a href="#transportBanned">Not allowed</a></li>
-                </ul>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#breaks">6. Breaks</a></h3>
-                <p>You may pause, but the clock keeps running and you start again where you stopped.</p>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#teamRuns">7. Team Runs</a></h3>
-                <p>Teams travel together. Only people present for the whole run get credit.</p>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#conduct">8. Conduct &amp; Safety</a></h3>
-                <p>Pay your fares, obey the law and stay off the tracks.</p>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#submission">9. Submission &amp; Evidence</a></h3>
-                <p>Send enough evidence that we can retrace your whole route.</p>
-                <ul class="subLinks">
-                    <li><a href="#submitWhat">What to send</a></li>
-                    <li><a href="#submitEvidence">Key evidence</a></li>
-                    <li><a href="#submitExtra">Extra evidence</a></li>
-                </ul>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#timing">10. Timing</a></h3>
-                <p>The clock starts when the doors close at your first station and stops when they open at your last.</p>
-                <ul class="subLinks">
-                    <li><a href="#timingSummary">Start &amp; finish</a></li>
-                    <li><a href="#timingTwoDevices">Two devices</a></li>
-                    <li><a href="#timingOneDevice">One device</a></li>
-                </ul>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#categories">11. Categories</a></h3>
-                <p>Every system has All Stops. Ask us before you try something new.</p>
-            </div>
-            <div class="overviewCard">
-                <h3><a href="#changes">12. Changes &amp; Contact</a></h3>
-                <p>We judge each run by the rules on the day it was run.</p>
-            </div>
-        </div>
-    </section>
 
     <div class="rules-toolbar">
         <button type="button" onclick="setAllGroups(true)">Expand all</button>
@@ -274,14 +186,14 @@ if (localStorage.getItem("theme")) {
             <tr><th scope="col">Term</th><th scope="col">Meaning</th></tr>
         </thead>
         <tbody>
-            <tr><td data-label="Term"><b>Station</b></td><td data-label="Meaning">A place where the system's vehicles stop for passengers, as shown on the agency's official map. "Station" and "stop" mean the same thing in these rules.</td></tr>
-            <tr><td data-label="Term"><b>Visit</b></td><td data-label="Meaning">Being aboard a vehicle that stops at a station and opens its doors. See rule 2.2.</td></tr>
-            <tr><td data-label="Term"><b>Public service</b></td><td data-label="Meaning">The system's normal passenger service, open to anyone with a fare. Charters, tours, test runs and trains out of service do not count.</td></tr>
-            <tr><td data-label="Term"><b>Transfer</b></td><td data-label="Meaning">Changing between two vehicles, or travelling between two stations on foot. Turning back on the same vehicle at the end of a line also counts as a transfer.</td></tr>
-            <tr><td data-label="Term"><b>Nodes</b></td><td data-label="Meaning">The start station, the end station, and every place you transfer.</td></tr>
-            <tr><td data-label="Term"><b>Segments</b></td><td data-label="Meaning">The pieces of your route. A new segment starts when you get off a vehicle, or reach a new station on foot.</td></tr>
+            <tr><td data-label="Term"><b>Station</b></td><td data-label="Meaning">A phyiscal station or stop where you are able to board a vehicle, as shown by an offical agency source.</td></tr>
+            <tr><td data-label="Term"><b>Visit</b></td><td data-label="Meaning">Being aboard a vehicle that stops at a station and opens its doors, or boarding/alighting at said stop. See rule 2.2.</td></tr>
+            <tr><td data-label="Term"><b>Public service</b></td><td data-label="Meaning">The system's normal passenger service, open to anyone with a valid fare.</td></tr>
+            <tr><td data-label="Term"><b>Transfer</b></td><td data-label="Meaning">A change between two vehciles, or the change of a service pattern for a vehcile. Any travel on foot, and turning back on the same vehicle at the end of a line are examples of a transfer.</td></tr>
+            <tr><td data-label="Term"><b>Nodes</b></td><td data-label="Meaning">The start station, the end station, and all transfer points.</td></tr>
+            <tr><td data-label="Term"><b>Segments</b></td><td data-label="Meaning">The pieces we use to construct your route. A new segment starts when you get off a vehicle, or reach a new station on foot.</td></tr>
             <tr><td data-label="Term"><b>Track section</b></td><td data-label="Meaning">A piece of track on the map between two junctions, or between a junction and the end of a line. Used only for maps without stop icons (rule 3.4).</td></tr>
-            <tr><td data-label="Term"><b>Category</b></td><td data-label="Meaning">The set of stations (or track) a run must cover, such as All Stops. Each system's page lists its categories.</td></tr>
+            <tr><td data-label="Term"><b>Category</b></td><td data-label="Meaning">The set of stations (or track) a run must cover, such as All Stops. Each system's page lists potential categories.</td></tr>
         </tbody>
     </table>
         </div>
@@ -290,10 +202,10 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="basics">
         <summary>2. The Basics</summary>
         <div class="group-content">
-    <p class="groupLead">Visit every station in your category, aboard the system's own vehicles, with the doors open.</p>
+    <p class="groupLead">Visit every station in your category, aboard the system's own vehicles, with possibilites to alight/board at every stop.</p>
     <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item" role="presentation"><button class="nav-link active" id="basicsVisitAllTab" data-bs-toggle="tab" data-bs-target="#basicsVisitAll" type="button" role="tab" aria-controls="basicsVisitAll" aria-selected="true">2.1 What to visit</button></li>
-        <li class="nav-item" role="presentation"><button class="nav-link" id="basicsVisitTab" data-bs-toggle="tab" data-bs-target="#basicsVisit" type="button" role="tab" aria-controls="basicsVisit" aria-selected="false">2.2 What counts</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link active" id="basicsVisitAllTab" data-bs-toggle="tab" data-bs-target="#basicsVisitAll" type="button" role="tab" aria-controls="basicsVisitAll" aria-selected="true">2.1 What?</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" id="basicsVisitTab" data-bs-toggle="tab" data-bs-target="#basicsVisit" type="button" role="tab" aria-controls="basicsVisit" aria-selected="false">2.2 Valid Stops</button></li>
         <li class="nav-item" role="presentation"><button class="nav-link" id="basicsDisruptionsTab" data-bs-toggle="tab" data-bs-target="#basicsDisruptions" type="button" role="tab" aria-controls="basicsDisruptions" aria-selected="false">2.3 Disruptions</button></li>
         <li class="nav-item" role="presentation"><button class="nav-link" id="basicsTravelTab" data-bs-toggle="tab" data-bs-target="#basicsTravel" type="button" role="tab" aria-controls="basicsTravel" aria-selected="false">2.4&ndash;2.5 Travel</button></li>
     </ul>
@@ -302,25 +214,25 @@ if (localStorage.getItem("theme")) {
             <ol class="rules-list" start="1">
                 <li>To complete a run, you must visit every station in your category.</li>
                 <ol type="a">
-                    <li>You don't have to visit stations that open only on some days, such as event stations. If a station has at least one service every day of the week, you must visit it, even if it opens for only a few hours.</li>
+                    <li>You don't have to visit stations that open only on some days, such as event stations. If a station has at least one scheduled service every day of the week, you must visit it, even if only available for a few hours.</li>
                     <li>If some stations or lines close on certain days as a matter of course (such as stations closed at weekends), we may offer a category for those days. See our <a href="https://www.transitruns.org/gotrain">GO Train</a> leaderboard for an example.</li>
                 </ol>
             </ol>
         </div>
         <div class="tab-pane fade" id="basicsVisit" role="tabpanel" aria-labelledby="basicsVisitTab" tabindex="0">
             <ol class="rules-list" start="2">
-                <li>To visit a station, you must be aboard a vehicle of the system you are running, in public service, that arrives at or leaves from the station.</li>
+                <li>To visit a station, you must be aboard or boarding a vehicle of the system you are running, in public service, arriving or leaving from the station.</li>
                 <ol type="a">
-                    <li>You only need to visit each station once, on one line, at one platform. <a href="#mapRule">Section 3</a> explains how the map decides what counts as one station.</li>
-                    <li>You don't need to get off. Boarding at a station also counts as visiting it.</li>
-                    <li>Stations that express, limited or skip-stop services pass without stopping do not count. The doors must open.</li>
+                    <li>You only need to visit each station once, on one line, at one platform. <a href="#mapRule">Section 3</a> contins more detials about one station.</li>
+                    <li>You are not required to get off. Pass through on vehciles are valid visits.</li>
+                    <li>Stations that express, limited or skip-stop services pass without stopping do not count. The doors must be able to open for any indending passengers.</li>
                     <li>If a station is a request stop, the vehicle doesn't need to stop or open its doors.</li>
                 </ol>
             </ol>
         </div>
         <div class="tab-pane fade" id="basicsDisruptions" role="tabpanel" aria-labelledby="basicsDisruptionsTab" tabindex="0">
             <ol class="rules-list" start="3">
-                <li>If something unusual stops a vehicle from calling at one or more stations:</li>
+                <li>If something unusual stops prevents a vehicle from calling at one or more stations:</li>
                 <ol type="a">
                     <li>If your vehicle passes through a mid-line station where it would normally stop, the station counts as visited.</li>
                     <li>If the agency runs replacement buses, or names existing bus routes as replacements, use these to visit the closed stations.</li>
@@ -331,7 +243,7 @@ if (localStorage.getItem("theme")) {
         <div class="tab-pane fade" id="basicsTravel" role="tabpanel" aria-labelledby="basicsTravelTab" tabindex="0">
             <ol class="rules-list" start="4">
                 <li>During a run, you may only travel in the ways listed in <a href="#transport">Section 5</a>.</li>
-                <li>A run is one attempt from start to finish. You may pause it only as <a href="#breaks">Section 6</a> sets out.</li>
+                <li>A run is one attempt from start to finish. You may pause  only as <a href="#breaks">Section 6</a> sets out, and timer will never stop between the ends of your run.</li>
             </ol>
         </div>
     </div>
@@ -339,18 +251,18 @@ if (localStorage.getItem("theme")) {
     </details>
 
     <details class="rule-group" id="mapRule">
-        <summary>3. Reading the Map</summary>
+        <summary>3. How do I decide what to run?</summary>
         <div class="group-content">
-    <p class="groupLead">The agency's official map decides what you must visit, and in which directions.</p>
-    <p>If your category page names a map, use that one. If the category page says something different from this section, the category page wins. Find how the map draws your stops, then open that tab for the details.</p>
+    <p class="groupLead">Offical maps published by agencies decide which stops you are required to visit, and in which directions.</p>
+    <p>If your category page contains a map, use that one. Category page rules override general ones.</p>
 
     <table class="caseTable mapCompare">
         <thead>
-            <tr><th scope="col">How the map draws it</th><th scope="col">What you must do</th><th scope="col">Rule</th></tr>
+            <tr><th scope="col">Agency Map</th><th scope="col">Action Taken</th><th scope="col">Rule</th></tr>
         </thead>
         <tbody>
             <tr><td data-label="How the map draws it">One line, one icon per stop</td><td data-label="What you must do">Visit each stop once, either direction</td><td data-label="Rule"><a href="#mapSingle">3.1</a></td></tr>
-            <tr><td data-label="How the map draws it">Two lines, stops paired across both</td><td data-label="What you must do">Visit each pair once, on either side</td><td data-label="Rule"><a href="#mapPaired">3.2</a></td></tr>
+            <tr><td data-label="How the map draws it">Two lines, stops paired across lines</td><td data-label="What you must do">Visit the pair once, on any side</td><td data-label="Rule"><a href="#mapPaired">3.2</a></td></tr>
             <tr><td data-label="How the map draws it">Two lines, stops not paired</td><td data-label="What you must do">Visit every stop on both sides</td><td data-label="Rule"><a href="#mapUnpaired">3.3</a></td></tr>
             <tr><td data-label="How the map draws it">Lines, but no stop icons</td><td data-label="What you must do">Ride every track section</td><td data-label="Rule"><a href="#mapNoIcons">3.4</a></td></tr>
         </tbody>
@@ -467,8 +379,7 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="specialStations">
         <summary>4. Special Stations &amp; One-Offs</summary>
         <div class="group-content">
-    <p class="groupLead">Most stations are simple. These are the ones that aren't.</p>
-    <p>Pick a tab to find your case, and check your system's page for anything specific to it.</p>
+    <p class="groupLead">Multi-agency stations &amp; special cases.</p>
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation"><button class="nav-link active" id="specialDirectionTab" data-bs-toggle="tab" data-bs-target="#specialDirection" type="button" role="tab" aria-controls="specialDirection" aria-selected="true">One-way &amp; loops</button></li>
         <li class="nav-item" role="presentation"><button class="nav-link" id="specialStoppingTab" data-bs-toggle="tab" data-bs-target="#specialStopping" type="button" role="tab" aria-controls="specialStopping" aria-selected="false">Stopping</button></li>
@@ -494,7 +405,7 @@ if (localStorage.getItem("theme")) {
                 <div>
                     <h3>One-way station</h3>
                     <p>Trains stop in one direction only.</p>
-                    <p><b>Visit it on a train going the way that stops there. A train on the other track does not count.</b></p>
+                    <p><b>You must visit on a train in a direction that will stop at that station.</b></p>
                     <p class="mapExample">Examples: Aqueduct Racetrack (New York), Mirabeau (Paris Line 10)</p>
                 </div>
             </div>
@@ -515,7 +426,7 @@ if (localStorage.getItem("theme")) {
                 <div>
                     <h3>One-way loop</h3>
                     <p>Trains run round a loop in one direction.</p>
-                    <p><b>Ride round the way trains run. Each loop stop needs its own door-open stop. Staying aboard round the loop is not a transfer.</b></p>
+                    <p><b>You must ride around the loop in full. Each loop stop needs its own visit. Staying aboard round the loop is not a transfer.</b></p>
                     <p class="mapExample">Examples: Paris Line 10 (Auteuil loop), Paris Line 7bis</p>
                 </div>
             </div>
@@ -525,9 +436,9 @@ if (localStorage.getItem("theme")) {
                 </thead>
                 <tbody>
                     <tr>
-                        <td data-label="Situation"><b>Terminal where everyone must get off</b></td>
+                        <td data-label="Situation"><b>Terminals</b></td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Yes</span></td>
-                        <td data-label="What to do">Arriving with the doors open counts. Getting off and boarding again, or turning back on the same vehicle, is a transfer.</td>
+                        <td data-label="What to do">If the terminus and orgin are techically 2 stops, on seperate streets, for Speedrunning, they coun't as one. <i>Example: L Taraval on Muni Metro. Final stop 46th &amp; Cutler is the same as the orgin stop, 46th &amp; Wawona.</i></td>
                     </tr>
                 </tbody>
             </table>
@@ -535,28 +446,28 @@ if (localStorage.getItem("theme")) {
         <div class="tab-pane fade" id="specialStopping" role="tabpanel" aria-labelledby="specialStoppingTab" tabindex="0">
             <table class="caseTable">
                 <thead>
-                    <tr><th scope="col">Situation</th><th scope="col">Counts?</th><th scope="col">What to do</th></tr>
+                    <tr><th scope="col">Situation</th><th scope="col">Counts?</th><th scope="col">Actiom</th></tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td data-label="Situation"><b>Request or flag stop</b></td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Yes</span></td>
-                        <td data-label="What to do">Being aboard as the vehicle passes is enough. It doesn't need to stop.</td>
+                        <td data-label="What to do">Being aboard as the vehicle passes is sufficent. It doesn't need to stop.</td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Express, limited or skip-stop service</b><br>Passes a station without stopping.</td>
                         <td data-label="Counts?"><span class="verdict verdictNo">No</span></td>
-                        <td data-label="What to do">Use a service that stops there. Check which pattern your train runs before you board.</td>
+                        <td data-label="What to do">Use a service that stops there. Check which pattern your train runs before you board. Spontaneous express runs, such as in a case where a train was scheduled to stop but then ran express is valid. <i>If you had sufficent time to exit the vehcile before the express section, with following services running local, we will probably invalidate your run.</i></td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Drop-off only or pick-up only stop</b></td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Yes</span></td>
-                        <td data-label="What to do">Counts if the doors open while you're aboard: arrive at a drop-off stop, or board at a pick-up stop.</td>
+                        <td data-label="What to do">You must either pass through, or if arriving or departing, you must ride the entire relevent section.</td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Only some doors open</b><br>Short platforms or selective door opening.</td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Yes</span></td>
-                        <td data-label="What to do">Counts if the vehicle makes its stop and opens doors for passengers, even if yours stay shut.</td>
+                        <td data-label="What to do">Valid if the vehicle makes its stop and opens doors for passengers, even if yours stay shut.</td>
                     </tr>
                 </tbody>
             </table>
@@ -589,12 +500,12 @@ if (localStorage.getItem("theme")) {
                     <tr>
                         <td data-label="Situation"><b>One station, many lines or platforms</b></td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Once</span></td>
-                        <td data-label="What to do">Visit it once, on any line, at any platform. The map decides what is one station (<a href="#mapRule">Section 3</a>). Some systems split a station in two, such as Paddington on the London Underground; the system page lists these.</td>
+                        <td data-label="What to do">Visit it once, on any line, at any platform. The map decides what is one station (<a href="#mapRule">Section 3</a>). Some systems split a station in two, such as Paddington on the London Underground. If stops are connected via a seamless pill, it is considered one stop. If they are connected via a transfer line, they are two seperate stations.</td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Station shared with another system</b></td>
                         <td data-label="Counts?"><span class="verdict verdictMaybe">Your system only</span></td>
-                        <td data-label="What to do">Only a vehicle of the system you are running counts. Another operator's train doesn't, unless the system page allows it.</td>
+                        <td data-label="What to do">You must visit that station on a vehcile run by your system, unless mentioned explicitly by the system page. <i>Example: Shared BART / Muni Metro stations on Market St. must be visited on a Muni train, if you are running Muni Metro.</i></td>
                     </tr>
                 </tbody>
             </table>
@@ -618,12 +529,12 @@ if (localStorage.getItem("theme")) {
                     <tr>
                         <td data-label="Situation"><b>New station opens</b></td>
                         <td data-label="Counts?"><span class="verdict verdictMust">Required</span></td>
-                        <td data-label="What to do">It is required from its first day. The leaderboard resets, and older runs move to a historical tab.</td>
+                        <td data-label="What to do">This usually triggers a leadeboard reset, and older runs move to a historical tab. In cases of a smaller station opening such as infill, a small penalty may be applied to current system runs, if at all.</td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Station shut for good, or not yet open</b></td>
                         <td data-label="Counts?"><span class="verdict verdictSkip">Not required</span></td>
-                        <td data-label="What to do">Skip it, even if it still shows on an old map.</td>
+                        <td data-label="What to do">Skip, even if shown on outdated agency materials.</td>
                     </tr>
                 </tbody>
             </table>
@@ -647,6 +558,7 @@ if (localStorage.getItem("theme")) {
                 <li>Public buses, trains, trams, streetcars and shuttles</li>
                 <li>Public ferries, cable cars and funiculars</li>
                 <li>Scheduled commercial flights</li>
+                <li>Jet Skis, as long as you return to place of origion with no intermediary travel.</li>
             </ul>
         </div>
         <div class="listBox bannedBox" id="transportBanned">
@@ -657,14 +569,15 @@ if (localStorage.getItem("theme")) {
                 <li>Private cars, taxis and ride-hailing</li>
                 <li>Paratransit and chartered vehicles</li>
                 <li>Private boats and aircraft</li>
+                <li><i>This is a non exhaustive list.</i></li>
             </ul>
         </div>
     </div>
     <ol class="rules-list">
-        <li>Only the system you are running can visit stations. Other public transport only gets you from place to place.</li>
-        <li>We ban bicycles because not everyone has the same access to them. Bikeshare isn't everywhere, and roads aren't equally safe. We allow running because agencies often expect riders to walk between stations.</li>
+        <li>Only the system currently being run is able to visit stations. Other methods of transport are only for intermediary travel.</li>
+        <li>Bikeshare &amp; bicycles are prohibited due to inequal access. Bikesahre isn't univerisally accessable, and in some places run by private operators. We allow running because agencies often expect riders to walk between stations.</li>
         <li>We may still reject a run with very long distances on foot.</li>
-        <li>These lists are not complete. If you want to use something not listed, ask us first.</li>
+        <li>These lists are not exhaustive. If you have a question, just ask!.</li>
         <li>During a break (<a href="#breaks">Section 6</a>), you may travel any way you like.</li>
     </ol>
         </div>
@@ -673,7 +586,7 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="breaks">
         <summary>6. Breaks</summary>
         <div class="group-content">
-    <p class="groupLead">You may pause, but the clock keeps running and you start again where you stopped.</p>
+    <p class="groupLead">You may pause, but the clock is still active and you must return back to where your break started.</p>
     <p>We expect most runs to be done in one go, but you may take breaks, such as to sleep on a run that spans several days. If you do:</p>
     <ol class="rules-list">
         <li>Keep the clock running. If you use a stopwatch, it must not stop during the break.</li>
@@ -688,12 +601,12 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="teamRuns">
         <summary>7. Team Runs</summary>
         <div class="group-content">
-    <p class="groupLead">Teams travel together. Only people present for the whole run get credit.</p>
+    <p class="groupLead">Teams travel together. <b>Only members present for the entirety of the run, to all stations, will recieve credit.</b></p>
     <ol class="rules-list">
-        <li>One team member submits the run and lists everyone who took part. Sending the same run twice will not make it faster to check.</li>
-        <li>Only people present for the whole run get credit.</li>
-        <li>The team travels together. A station counts only when every credited runner is aboard. You may not split up to cover different stations.</li>
-        <li>If someone drops out, the rest may carry on. The person who left gets no credit.</li>
+        <li>One team member submits the run and lists everyone who took part. Multiple submissions will not decrease verification time.</li>
+        <li>Only people present for the entirety of the run, which includes all stations, will be mentioned.</li>
+        <li>The team must visit each station together. A station counts only when every credited runner is aboard. You may not split up to cover different stations.</li>
+        <li>Dropouts, or midjoins will recieve no credit. Additonally, since team runs are evaluated on the basis of an indivdual, you may not create shifts to trade off the running camera.</li>
     </ol>
         </div>
     </details>
@@ -701,14 +614,15 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="conduct">
         <summary>8. Conduct &amp; Safety</summary>
         <div class="group-content">
-    <p class="groupLead">No record is worth breaking the law or putting anyone at risk. We will reject a run that breaks these rules, however fast it is.</p>
+    <p class="groupLead"><b>No record is worth breaking the law for. Runs that break our standards of conduct may be rejected.</b></p>
     <ol class="rules-list">
-        <li>Pay every fare and carry a valid ticket.</li>
+        <li>Pay every fare and always carry a valid ticket.</li>
         <li>Obey the law, the agency's rules and its staff.</li>
         <li>Never enter tracks, tunnels or staff-only areas, hold doors, or ride on the outside of a vehicle.</li>
-        <li>When on foot, use pavements and paths, and cross roads at signals. Don't run where you could hurt someone, such as on crowded platforms or stairs.</li>
+        <li>When on foot, use pavements and paths, and use prudent judgement when crossing streets. Don't run where you could hurt someone, such as on crowded platforms or stairs.</li>
         <li>Don't get in the way of service or other riders.</li>
         <li>Follow local rules on filming, and respect people who don't want to be filmed.</li>
+        <li>Be curtious to all members of the public and to TransitRuns community members online, and offline.</li>
     </ol>
         </div>
     </details>
@@ -716,7 +630,7 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="submission">
         <summary>9. Submission &amp; Evidence</summary>
         <div class="group-content">
-    <p class="groupLead">Send enough evidence that we can retrace your whole route.</p>
+    <p class="groupLead">Our rule: We must be able to retrace your entire route.</p>
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation"><button class="nav-link active" id="submitWhatTab" data-bs-toggle="tab" data-bs-target="#submitWhat" type="button" role="tab" aria-controls="submitWhat" aria-selected="true">9.1&ndash;9.2 What to send</button></li>
         <li class="nav-item" role="presentation"><button class="nav-link" id="submitEvidenceTab" data-bs-toggle="tab" data-bs-target="#submitEvidence" type="button" role="tab" aria-controls="submitEvidence" aria-selected="false">9.3 Key evidence</button></li>
@@ -725,7 +639,7 @@ if (localStorage.getItem("theme")) {
     <div class="tab-content">
         <div class="tab-pane fade show active" id="submitWhat" role="tabpanel" aria-labelledby="submitWhatTab" tabindex="0">
             <ol class="rules-list" start="1">
-                <li>You need an active TransitRuns account to submit a run. For team runs, one account submits (<a href="#teamRuns">Section 7</a>).</li>
+                <li>You need an active TransitRuns account to submit a run. For team runs, only one account should submit (<a href="#teamRuns">Section 7</a>).</li>
                 <li>You must submit:</li>
                 <ol type="a">
                     <li>Who else took part (with TransitRuns usernames, if they have them);</li>
@@ -733,7 +647,7 @@ if (localStorage.getItem("theme")) {
                     <li>The date of the run;</li>
                     <li>The local time the run began;</li>
                     <li>The length of the run in <code>HH:MM:SS</code> format, unless you follow a timing standard in <a href="#timing">Section 10</a>;</li>
-                    <li>At least one key piece of evidence (more evidence makes checking faster); and</li>
+                    <li>Sufficent evidence to validate your run, usually a piece of key evidence; and</li>
                     <li>Any other comments, including service problems that affected your run.</li>
                 </ol>
             </ol>
@@ -751,7 +665,31 @@ if (localStorage.getItem("theme")) {
                     <li>We suggest footage that shows both the stopwatch and the local time (such as a departure board or clock), above all at transfers.</li>
                     <li>Photos and video must make clear which station you are at: a station sign, an on-board screen, an announcement you can hear, or other features we can identify.</li>
                     <li>On maps without stop icons (<a href="#mapNoIcons">rule 3.4</a>), your evidence must also show that you rode each track section from end to end.</li>
+
                 </ol>
+                <p>Additionally, you <b>MUST</b> submit a log of your run, detailing transfer times and your route, as well as the evidence corresponding to that sgement.</p>
+                <p>Example route log (including three transfers and a three-minute walk during one transfer):</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <caption>Sample route log</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Boarding</th>
+                                <th scope="col">Off</th>
+                                <th scope="col">Board Stop</th>
+                                <th scope="col">Alight</th>
+                                <th scope="col">Route Name/#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>08:00</td><td>08:12</td><td>Central</td><td>Harbour</td><td>Blue Line</td></tr>
+                            <tr><td style="color: var(--bs-body-color);">Walk 3 min from Harbour exit to Harbour entrance</td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>08:15</td><td>08:28</td><td>Harbour</td><td>Museum</td><td>Route 12</td></tr>
+                            <tr><td>08:32</td><td>08:45</td><td>Museum</td><td>University</td><td>Green Line</td></tr>
+                            <tr><td>08:49</td><td>09:02</td><td>University</td><td>Airport</td><td>Route 7</td></tr>
+                        </tbody>
+                    </table>
+                </div>
             </ol>
         </div>
         <div class="tab-pane fade" id="submitExtra" role="tabpanel" aria-labelledby="submitExtraTab" tabindex="0">
@@ -762,7 +700,6 @@ if (localStorage.getItem("theme")) {
                     <li>A video or live stream of the whole run;</li>
                     <li>The numbers of the vehicles you rode;</li>
                     <li>A log of local or elapsed time at each station; or</li>
-                    <li>Statements from witnesses TransitRuns staff trust.</li>
                 </ol>
             </ol>
         </div>
@@ -773,7 +710,7 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="timing">
         <summary>10. Timing</summary>
         <div class="group-content">
-    <p class="groupLead">The clock starts when the doors close at your first station and stops when they open at your last.</p>
+    <p class="groupLead">The clock starts when the doors close at your first station and stops when they open at the last.</p>
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation"><button class="nav-link active" id="timingSummaryTab" data-bs-toggle="tab" data-bs-target="#timingSummary" type="button" role="tab" aria-controls="timingSummary" aria-selected="true">Start &amp; finish</button></li>
         <li class="nav-item" role="presentation"><button class="nav-link" id="timingTwoDevicesTab" data-bs-toggle="tab" data-bs-target="#timingTwoDevices" type="button" role="tab" aria-controls="timingTwoDevices" aria-selected="false">Two devices</button></li>
@@ -786,14 +723,14 @@ if (localStorage.getItem("theme")) {
                     <tr><th scope="col">Moment</th><th scope="col">Rule</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td data-label="Moment"><b>Start</b></td><td data-label="Rule">When the doors fully close at your first station.</td></tr>
+                    <tr><td data-label="Moment"><b>Start</b></td><td data-label="Rule">When the doors touch closed at your first station.</td></tr>
                     <tr><td data-label="Moment"><b>Finish</b></td><td data-label="Rule">When the doors begin to open at your last station. Not when you step onto the platform.</td></tr>
                     <tr><td data-label="Moment"><b>Breaks</b></td><td data-label="Rule">The clock keeps running (<a href="#breaks">Section 6</a>).</td></tr>
-                    <tr><td data-label="Moment"><b>Retiming</b></td><td data-label="Rule">We may retime your run from your footage to match the start and finish above.</td></tr>
-                    <tr><td data-label="Moment"><b>No stopwatch shown</b></td><td data-label="Rule">We take your hours and minutes and add 59 seconds.</td></tr>
+                    <tr><td data-label="Moment"><b>Retiming</b></td><td data-label="Rule">We reserve the right to retime your run from your footage to match the start and finish above.</td></tr>
+                    <tr><td data-label="Moment"><b>No stopwatch shown</b></td><td data-label="Rule">We take your hours and minutes and add 59 seconds if we cannot verify seconds.</td></tr>
                 </tbody>
             </table>
-            <p>The other two tabs set out how we suggest you film your run, depending on the devices you have.</p>
+            <p>You can view how we reccomend you film, based on the number of devices available to you.</p>
         </div>
         <div class="tab-pane fade" id="timingTwoDevices" role="tabpanel" aria-labelledby="timingTwoDevicesTab" tabindex="0">
             <p><i>If you have a device that can record video, and a second device for a stopwatch:</i></p>
@@ -811,32 +748,11 @@ if (localStorage.getItem("theme")) {
         </div>
     </details>
 
-    <details class="rule-group" id="categories">
-        <summary>11. Categories &amp; Leaderboards</summary>
-        <div class="group-content">
-    <p class="groupLead">Every system has All Stops. Ask us before you try something new.</p>
-    <table class="caseTable twoCol">
-        <thead>
-            <tr><th scope="col">Topic</th><th scope="col">Rule</th></tr>
-        </thead>
-        <tbody>
-            <tr><td data-label="Topic"><b>Systems we track</b></td><td data-label="Rule">Rail systems with more than one line or service: metro, tram, light rail, commuter and regional rail. Bus rapid transit networks count if the map shows clear stops. Other bus networks do not.</td></tr>
-            <tr><td data-label="Topic"><b>All Stops</b></td><td data-label="Rule">Visit every station on the network. Every system has this category.</td></tr>
-            <tr><td data-label="Topic"><b>Other categories</b></td><td data-label="Rule">Each system page lists them, with any notes for that system. Where a system page and these rules differ, the system page wins.</td></tr>
-            <tr><td data-label="Topic"><b>New categories</b></td><td data-label="Rule">Ask us first. A new category needs a simple rule (such as "only stations in one city") and must be possible in a sensible time. It joins the main leaderboards once several people have run it.</td></tr>
-            <tr><td data-label="Topic"><b>Combined systems</b></td><td data-label="Rule">Runs that mix modes or operators, such as rail plus bus, need our approval first.</td></tr>
-            <tr><td data-label="Topic"><b>When the network changes</b></td><td data-label="Rule">When a new station opens, we reset the leaderboard. Older runs stay on a historical tab.</td></tr>
-            <tr><td data-label="Topic"><b>Any% and 100%</b></td><td data-label="Rule">We don't use these. Every category has a fixed set of stations.</td></tr>
-        </tbody>
-    </table>
-        </div>
-    </details>
-
     <details class="rule-group" id="changes">
         <summary>12. Changes &amp; Contact</summary>
         <div class="group-content">
     <ol class="rules-list">
-        <li>We may change these rules. When we do, we update the date at the top of this page.</li>
+        <li>We reserve the right to change our rules at any time, and apply them at our discretion. When we do, we update the date at the top of this page.</li>
         <li>We judge each run by the rules in force on the day it was run.</li>
         <li>Questions, or a case these rules don't cover? Ask us on our <a href="https://discord.gg/VkkhehU6P2">Discord</a> or at <b>transitrunsstaff@gmail.com</b>.</li>
     </ol>
