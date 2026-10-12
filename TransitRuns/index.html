@@ -8,7 +8,7 @@ Transit Speedrunning Rules - TransitRuns</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="static/bootstrap.min.css" />
         <link rel="stylesheet" href="static/index.css" />
-        <link rel="stylesheet" href="rules.css?v=2026-10-11b" />
+        <link rel="stylesheet" href="rules.css?v=2026-10-12b" />
                 <script src="static/jquery-3.7.1.min.js"></script>
         <script src="static/bootstrap.bundle.min.js"></script>
     </head>
@@ -169,7 +169,7 @@ if (localStorage.getItem("theme")) {
 <div class="body-box">
     <br>
     <p>These rules are general. Some systems need small changes, which we list on each system's page. The rules exist to keep competition fair and healthy, and we hope you don't find them limiting.</p>
-    <p>We reccomend reading the category rules and system page before you run. For new categories or questions, ask us on our Discord or at <b>transitrunsstaff@gmail.com</b>. We would much rather help you ahead of time than reject a run over a misunderstanding.</p>
+    <p>We recommend reading the category rules and system page before you run. For new categories or questions, ask us on our Discord or at <b>transitrunsstaff@gmail.com</b>. We would much rather help you ahead of time than reject a run over a misunderstanding.</p>
     <p>For new systems, follow the rules as closely as possible. If a conflict occurs in your planning, we would be happy to assist!</p>
     <p><i>Last Updated 11 October 2026</i></p>
 
@@ -186,10 +186,10 @@ if (localStorage.getItem("theme")) {
             <tr><th scope="col">Term</th><th scope="col">Meaning</th></tr>
         </thead>
         <tbody>
-            <tr><td data-label="Term"><b>Station</b></td><td data-label="Meaning">A phyiscal station or stop where you are able to board a vehicle, as shown by an offical agency source.</td></tr>
+            <tr><td data-label="Term"><b>Station</b></td><td data-label="Meaning">A physical station or stop where you can board a vehicle, as shown by an official agency source.</td></tr>
             <tr><td data-label="Term"><b>Visit</b></td><td data-label="Meaning">Being aboard a vehicle that stops at a station and opens its doors, or boarding/alighting at said stop. See rule 2.2.</td></tr>
             <tr><td data-label="Term"><b>Public service</b></td><td data-label="Meaning">The system's normal passenger service, open to anyone with a valid fare.</td></tr>
-            <tr><td data-label="Term"><b>Transfer</b></td><td data-label="Meaning">A change between two vehciles, or the change of a service pattern for a vehcile. Any travel on foot, and turning back on the same vehicle at the end of a line are examples of a transfer.</td></tr>
+            <tr><td data-label="Term"><b>Transfer</b></td><td data-label="Meaning">A change between two vehicles, or a change of service pattern on the same vehicle. Any travel on foot, and turning back on the same vehicle at the end of a line, are both transfers.</td></tr>
             <tr><td data-label="Term"><b>Nodes</b></td><td data-label="Meaning">The start station, the end station, and all transfer points.</td></tr>
             <tr><td data-label="Term"><b>Segments</b></td><td data-label="Meaning">The pieces we use to construct your route. A new segment starts when you get off a vehicle, or reach a new station on foot.</td></tr>
             <tr><td data-label="Term"><b>Track section</b></td><td data-label="Meaning">A piece of track on the map between two junctions, or between a junction and the end of a line. Used only for maps without stop icons (rule 3.4).</td></tr>
@@ -202,7 +202,7 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="basics">
         <summary>2. The Basics</summary>
         <div class="group-content">
-    <p class="groupLead">Visit every station in your category, aboard the system's own vehicles, with possibilites to alight/board at every stop.</p>
+    <p class="groupLead">Visit every station in your category, aboard the system's own vehicles, with the chance to board or alight at every stop.</p>
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation"><button class="nav-link active" id="basicsVisitAllTab" data-bs-toggle="tab" data-bs-target="#basicsVisitAll" type="button" role="tab" aria-controls="basicsVisitAll" aria-selected="true">2.1 What?</button></li>
         <li class="nav-item" role="presentation"><button class="nav-link" id="basicsVisitTab" data-bs-toggle="tab" data-bs-target="#basicsVisit" type="button" role="tab" aria-controls="basicsVisit" aria-selected="false">2.2 Valid Stops</button></li>
@@ -221,18 +221,18 @@ if (localStorage.getItem("theme")) {
         </div>
         <div class="tab-pane fade" id="basicsVisit" role="tabpanel" aria-labelledby="basicsVisitTab" tabindex="0">
             <ol class="rules-list" start="2">
-                <li>To visit a station, you must be aboard or boarding a vehicle of the system you are running, in public service, arriving or leaving from the station.</li>
+                <li>To visit a station, you must be aboard or boarding a vehicle of the system you are running, in public service, arriving at or leaving from the station.</li>
                 <ol type="a">
-                    <li>You only need to visit each station once, on one line, at one platform. <a href="#mapRule">Section 3</a> contins more detials about one station.</li>
-                    <li>You are not required to get off. Pass through on vehciles are valid visits.</li>
-                    <li>Stations that express, limited or skip-stop services pass without stopping do not count. The doors must be able to open for any indending passengers.</li>
+                    <li>You only need to visit each station once, on one line, at one platform. <a href="#mapRule">Section 3</a> has more details on what counts as one station.</li>
+                    <li>You are not required to get off. Passing through on a vehicle is a valid visit.</li>
+                    <li>Stations that express, limited or skip-stop services pass without stopping do not count. The doors must be able to open for any intending passengers.</li>
                     <li>If a station is a request stop, the vehicle doesn't need to stop or open its doors.</li>
                 </ol>
             </ol>
         </div>
         <div class="tab-pane fade" id="basicsDisruptions" role="tabpanel" aria-labelledby="basicsDisruptionsTab" tabindex="0">
             <ol class="rules-list" start="3">
-                <li>If something unusual stops prevents a vehicle from calling at one or more stations:</li>
+                <li>If something unusual prevents a vehicle from calling at one or more stations:</li>
                 <ol type="a">
                     <li>If your vehicle passes through a mid-line station where it would normally stop, the station counts as visited.</li>
                     <li>If the agency runs replacement buses, or names existing bus routes as replacements, use these to visit the closed stations.</li>
@@ -243,7 +243,7 @@ if (localStorage.getItem("theme")) {
         <div class="tab-pane fade" id="basicsTravel" role="tabpanel" aria-labelledby="basicsTravelTab" tabindex="0">
             <ol class="rules-list" start="4">
                 <li>During a run, you may only travel in the ways listed in <a href="#transport">Section 5</a>.</li>
-                <li>A run is one attempt from start to finish. You may pause  only as <a href="#breaks">Section 6</a> sets out, and timer will never stop between the ends of your run.</li>
+                <li>A run is one attempt from start to finish. You may pause only as <a href="#breaks">Section 6</a> sets out, and the timer never stops between the start and end of your run.</li>
             </ol>
         </div>
     </div>
@@ -253,7 +253,7 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="mapRule">
         <summary>3. How do I decide what to run?</summary>
         <div class="group-content">
-    <p class="groupLead">Offical maps published by agencies decide which stops you are required to visit, and in which directions.</p>
+    <p class="groupLead">Official maps published by agencies decide which stops you are required to visit, and in which directions.</p>
     <p>If your category page contains a map, use that one. Category page rules override general ones.</p>
 
     <table class="caseTable mapCompare">
@@ -430,6 +430,26 @@ if (localStorage.getItem("theme")) {
                     <p class="mapExample">Examples: Paris Line 10 (Auteuil loop), Paris Line 7bis</p>
                 </div>
             </div>
+            <div class="mapPane">
+                <svg viewBox="0 0 320 140" width="320" height="140" role="img" aria-label="A terminal loop round a block. The last stop and the first stop sit on different streets but count as one stop.">
+                    <path class="mapRide" d="M20 70 L150 70 L150 105 L290 105 L290 35 L150 35 L150 70"/>
+                    <path class="mapTrack" d="M20 70 L150 70 L150 105 L290 105 L290 35 L150 35 L150 70"/>
+                    <polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(258 105)"/>
+                    <polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(290 70) rotate(-90)"/>
+                    <polygon class="mapArrow" points="-6,-6 6,0 -6,6" transform="translate(184 35) rotate(180)"/>
+                    <rect class="mapGroup" x="198" y="17" width="44" height="106" rx="22"/>
+                    <circle class="mapStopMust" cx="220" cy="35" r="10"/>
+                    <circle class="mapStopMust" cx="220" cy="105" r="10"/>
+                    <text class="mapLabel" x="220" y="12">first stop</text>
+                    <text class="mapLabel" x="220" y="137">last stop</text>
+                </svg>
+                <div>
+                    <h3>Terminal loops</h3>
+                    <p>The last stop and the first stop of a loop can sit on different streets.</p>
+                    <p><b>They count as one stop. Visit either one.</b></p>
+                    <p class="mapExample">Example: L Taraval (Muni Metro): 46th &amp; Cutler and 46th &amp; Wawona</p>
+                </div>
+            </div>
             <table class="caseTable">
                 <thead>
                     <tr><th scope="col">Situation</th><th scope="col">Counts?</th><th scope="col">What to do</th></tr>
@@ -438,7 +458,7 @@ if (localStorage.getItem("theme")) {
                     <tr>
                         <td data-label="Situation"><b>Terminals</b></td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Yes</span></td>
-                        <td data-label="What to do">If the terminus and orgin are techically 2 stops, on seperate streets, for Speedrunning, they coun't as one. <i>Example: L Taraval on Muni Metro. Final stop 46th &amp; Cutler is the same as the orgin stop, 46th &amp; Wawona.</i></td>
+                        <td data-label="What to do">If the last stop and first stop of a terminal loop are technically two stops on separate streets, they count as one for speedrunning. <i>Example: L Taraval on Muni Metro. The final stop, 46th &amp; Cutler, counts as the same stop as the first stop, 46th &amp; Wawona.</i></td>
                     </tr>
                 </tbody>
             </table>
@@ -446,23 +466,23 @@ if (localStorage.getItem("theme")) {
         <div class="tab-pane fade" id="specialStopping" role="tabpanel" aria-labelledby="specialStoppingTab" tabindex="0">
             <table class="caseTable">
                 <thead>
-                    <tr><th scope="col">Situation</th><th scope="col">Counts?</th><th scope="col">Actiom</th></tr>
+                    <tr><th scope="col">Situation</th><th scope="col">Counts?</th><th scope="col">Action</th></tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td data-label="Situation"><b>Request or flag stop</b></td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Yes</span></td>
-                        <td data-label="What to do">Being aboard as the vehicle passes is sufficent. It doesn't need to stop.</td>
+                        <td data-label="What to do">Being aboard as the vehicle passes is sufficient. It doesn't need to stop.</td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Express, limited or skip-stop service</b><br>Passes a station without stopping.</td>
                         <td data-label="Counts?"><span class="verdict verdictNo">No</span></td>
-                        <td data-label="What to do">Use a service that stops there. Check which pattern your train runs before you board. Spontaneous express runs, such as in a case where a train was scheduled to stop but then ran express is valid. <i>If you had sufficent time to exit the vehcile before the express section, with following services running local, we will probably invalidate your run.</i></td>
+                        <td data-label="What to do">Use a service that stops there. Check which pattern your train runs before you board. Unplanned express running is valid: for example, when a train was scheduled to stop but ran express instead. <i>If you had enough time to leave the vehicle before the express section, and following services ran local, we will probably invalidate your run.</i></td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Drop-off only or pick-up only stop</b></td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Yes</span></td>
-                        <td data-label="What to do">You must either pass through, or if arriving or departing, you must ride the entire relevent section.</td>
+                        <td data-label="What to do">You must either pass through, or if arriving or departing, you must ride the entire relevant section.</td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Only some doors open</b><br>Short platforms or selective door opening.</td>
@@ -492,6 +512,26 @@ if (localStorage.getItem("theme")) {
             </table>
         </div>
         <div class="tab-pane fade" id="specialShared" role="tabpanel" aria-labelledby="specialSharedTab" tabindex="0">
+            <div class="mapPane">
+                <svg viewBox="0 0 320 130" width="320" height="130" role="img" aria-label="Left: two lines joined by one seamless pill make one stop. Right: two separate stop icons joined by a thin transfer line are two stations.">
+                    <line class="mapTrack" x1="15" y1="45" x2="145" y2="45"/>
+                    <line class="mapTrackAlt" x1="15" y1="80" x2="145" y2="80"/>
+                    <rect class="mapStopMust" x="70" y="32" width="20" height="61" rx="10"/>
+                    <text class="mapLabel" x="80" y="120">one stop</text>
+                    <line class="mapDivider" x1="160" y1="20" x2="160" y2="110"/>
+                    <line class="mapTrack" x1="175" y1="45" x2="305" y2="45"/>
+                    <line class="mapTrackAlt" x1="175" y1="80" x2="305" y2="80"/>
+                    <line class="mapConnector" x1="215" y1="45" x2="265" y2="80"/>
+                    <circle class="mapStopMust" cx="215" cy="45" r="10"/>
+                    <circle class="mapStopMust" cx="265" cy="80" r="10"/>
+                    <text class="mapLabel" x="240" y="120">two stations</text>
+                </svg>
+                <div>
+                    <h3>One stop or two?</h3>
+                    <p>A seamless pill joining two lines makes one stop.</p>
+                    <p><b>A thin transfer line between separate stop icons means two stations. Visit both.</b></p>
+                </div>
+            </div>
             <table class="caseTable">
                 <thead>
                     <tr><th scope="col">Situation</th><th scope="col">Counts?</th><th scope="col">What to do</th></tr>
@@ -500,12 +540,12 @@ if (localStorage.getItem("theme")) {
                     <tr>
                         <td data-label="Situation"><b>One station, many lines or platforms</b></td>
                         <td data-label="Counts?"><span class="verdict verdictYes">Once</span></td>
-                        <td data-label="What to do">Visit it once, on any line, at any platform. The map decides what is one station (<a href="#mapRule">Section 3</a>). Some systems split a station in two, such as Paddington on the London Underground. If stops are connected via a seamless pill, it is considered one stop. If they are connected via a transfer line, they are two seperate stations.</td>
+                        <td data-label="What to do">Visit it once, on any line, at any platform. The map decides what is one station (<a href="#mapRule">Section 3</a>). Some systems split a station in two, such as Paddington on the London Underground. If stops are connected via a seamless pill, it is considered one stop. If they are connected via a transfer line, they are two separate stations.</td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Station shared with another system</b></td>
                         <td data-label="Counts?"><span class="verdict verdictMaybe">Your system only</span></td>
-                        <td data-label="What to do">You must visit that station on a vehcile run by your system, unless mentioned explicitly by the system page. <i>Example: Shared BART / Muni Metro stations on Market St. must be visited on a Muni train, if you are running Muni Metro.</i></td>
+                        <td data-label="What to do">You must visit that station on a vehicle run by your system, unless mentioned explicitly by the system page. <i>Example: Shared BART / Muni Metro stations on Market St. must be visited on a Muni train, if you are running Muni Metro.</i></td>
                     </tr>
                 </tbody>
             </table>
@@ -529,7 +569,7 @@ if (localStorage.getItem("theme")) {
                     <tr>
                         <td data-label="Situation"><b>New station opens</b></td>
                         <td data-label="Counts?"><span class="verdict verdictMust">Required</span></td>
-                        <td data-label="What to do">This usually triggers a leadeboard reset, and older runs move to a historical tab. In cases of a smaller station opening such as infill, a small penalty may be applied to current system runs, if at all.</td>
+                        <td data-label="What to do">This usually triggers a leaderboard reset, and older runs move to a historical tab. In cases of a smaller station opening such as infill, a small penalty may be applied to current system runs, if at all.</td>
                     </tr>
                     <tr>
                         <td data-label="Situation"><b>Station shut for good, or not yet open</b></td>
@@ -558,7 +598,7 @@ if (localStorage.getItem("theme")) {
                 <li>Public buses, trains, trams, streetcars and shuttles</li>
                 <li>Public ferries, cable cars and funiculars</li>
                 <li>Scheduled commercial flights</li>
-                <li>Jet Skis, as long as you return to place of origion with no intermediary travel.</li>
+                <li>Jet Skis, as long as you return to place of origin with no intermediary travel.</li>
             </ul>
         </div>
         <div class="listBox bannedBox" id="transportBanned">
@@ -575,9 +615,9 @@ if (localStorage.getItem("theme")) {
     </div>
     <ol class="rules-list">
         <li>Only the system currently being run is able to visit stations. Other methods of transport are only for intermediary travel.</li>
-        <li>Bikeshare &amp; bicycles are prohibited due to inequal access. Bikesahre isn't univerisally accessable, and in some places run by private operators. We allow running because agencies often expect riders to walk between stations.</li>
+        <li>Bikeshare &amp; bicycles are prohibited due to unequal access. Bikeshare isn't universally accessible, and in some places is run by private operators. We allow running because agencies often expect riders to walk between stations.</li>
         <li>We may still reject a run with very long distances on foot.</li>
-        <li>These lists are not exhaustive. If you have a question, just ask!.</li>
+        <li>These lists are not exhaustive. If you have a question, just ask!</li>
         <li>During a break (<a href="#breaks">Section 6</a>), you may travel any way you like.</li>
     </ol>
         </div>
@@ -601,12 +641,12 @@ if (localStorage.getItem("theme")) {
     <details class="rule-group" id="teamRuns">
         <summary>7. Team Runs</summary>
         <div class="group-content">
-    <p class="groupLead">Teams travel together. <b>Only members present for the entirety of the run, to all stations, will recieve credit.</b></p>
+    <p class="groupLead">Teams travel together. <b>Only members present for the entirety of the run, to all stations, will receive credit.</b></p>
     <ol class="rules-list">
         <li>One team member submits the run and lists everyone who took part. Multiple submissions will not decrease verification time.</li>
         <li>Only people present for the entirety of the run, which includes all stations, will be mentioned.</li>
         <li>The team must visit each station together. A station counts only when every credited runner is aboard. You may not split up to cover different stations.</li>
-        <li>Dropouts, or midjoins will recieve no credit. Additonally, since team runs are evaluated on the basis of an indivdual, you may not create shifts to trade off the running camera.</li>
+        <li>People who drop out or join partway receive no credit. Additionally, since team runs are judged as if run by one person, you may not take shifts to trade off the running camera.</li>
     </ol>
         </div>
     </details>
@@ -622,7 +662,7 @@ if (localStorage.getItem("theme")) {
         <li>When on foot, use pavements and paths, and use prudent judgement when crossing streets. Don't run where you could hurt someone, such as on crowded platforms or stairs.</li>
         <li>Don't get in the way of service or other riders.</li>
         <li>Follow local rules on filming, and respect people who don't want to be filmed.</li>
-        <li>Be curtious to all members of the public and to TransitRuns community members online, and offline.</li>
+        <li>Be courteous to all members of the public and to TransitRuns community members, online and offline.</li>
     </ol>
         </div>
     </details>
@@ -647,7 +687,7 @@ if (localStorage.getItem("theme")) {
                     <li>The date of the run;</li>
                     <li>The local time the run began;</li>
                     <li>The length of the run in <code>HH:MM:SS</code> format, unless you follow a timing standard in <a href="#timing">Section 10</a>;</li>
-                    <li>Sufficent evidence to validate your run, usually a piece of key evidence; and</li>
+                    <li>Sufficient evidence to validate your run, usually a piece of key evidence; and</li>
                     <li>Any other comments, including service problems that affected your run.</li>
                 </ol>
             </ol>
@@ -665,32 +705,29 @@ if (localStorage.getItem("theme")) {
                     <li>We suggest footage that shows both the stopwatch and the local time (such as a departure board or clock), above all at transfers.</li>
                     <li>Photos and video must make clear which station you are at: a station sign, an on-board screen, an announcement you can hear, or other features we can identify.</li>
                     <li>On maps without stop icons (<a href="#mapNoIcons">rule 3.4</a>), your evidence must also show that you rode each track section from end to end.</li>
-
                 </ol>
-                <p>Additionally, you <b>MUST</b> submit a log of your run, detailing transfer times and your route, as well as the evidence corresponding to that sgement.</p>
-                <p>Example route log (including three transfers and a three-minute walk during one transfer):</p>
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <caption>Sample route log</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Boarding</th>
-                                <th scope="col">Off</th>
-                                <th scope="col">Board Stop</th>
-                                <th scope="col">Alight</th>
-                                <th scope="col">Route Name/#</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>08:00</td><td>08:12</td><td>Central</td><td>Harbour</td><td>Blue Line</td></tr>
-                            <tr><td style="color: var(--bs-body-color);">Walk 3 min from Harbour exit to Harbour entrance</td><td></td><td></td><td></td><td></td></tr>
-                            <tr><td>08:15</td><td>08:28</td><td>Harbour</td><td>Museum</td><td>Route 12</td></tr>
-                            <tr><td>08:32</td><td>08:45</td><td>Museum</td><td>University</td><td>Green Line</td></tr>
-                            <tr><td>08:49</td><td>09:02</td><td>University</td><td>Airport</td><td>Route 7</td></tr>
-                        </tbody>
-                    </table>
-                </div>
             </ol>
+            <p>Additionally, you <b>MUST</b> submit a log of your run, detailing transfer times and your route, as well as the evidence for each segment.</p>
+            <p>Example route log (three transfers, including a three-minute walk):</p>
+            <table class="caseTable routeLog">
+                <caption>Sample route log</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Board time</th>
+                        <th scope="col">Alight time</th>
+                        <th scope="col">Board stop</th>
+                        <th scope="col">Alight stop</th>
+                        <th scope="col">Route name / #</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-label="Board time">08:00</td><td data-label="Alight time">08:12</td><td data-label="Board stop">Central</td><td data-label="Alight stop">Harbour</td><td data-label="Route name / #">Blue Line</td></tr>
+                    <tr class="routeWalk"><td colspan="5" data-label="Transfer on foot">Walk 3 min from Harbour exit to Harbour entrance</td></tr>
+                    <tr><td data-label="Board time">08:15</td><td data-label="Alight time">08:28</td><td data-label="Board stop">Harbour</td><td data-label="Alight stop">Museum</td><td data-label="Route name / #">Route 12</td></tr>
+                    <tr><td data-label="Board time">08:32</td><td data-label="Alight time">08:45</td><td data-label="Board stop">Museum</td><td data-label="Alight stop">University</td><td data-label="Route name / #">Green Line</td></tr>
+                    <tr><td data-label="Board time">08:49</td><td data-label="Alight time">09:02</td><td data-label="Board stop">University</td><td data-label="Alight stop">Airport</td><td data-label="Route name / #">Route 7</td></tr>
+                </tbody>
+            </table>
         </div>
         <div class="tab-pane fade" id="submitExtra" role="tabpanel" aria-labelledby="submitExtraTab" tabindex="0">
             <ol class="rules-list" start="4">
@@ -698,8 +735,8 @@ if (localStorage.getItem("theme")) {
                 <ol type="a">
                     <li>A GPS log of the whole run, such as an unedited Google Maps Timeline or Strava;</li>
                     <li>A video or live stream of the whole run;</li>
-                    <li>The numbers of the vehicles you rode;</li>
-                    <li>A log of local or elapsed time at each station; or</li>
+                    <li>The numbers of the vehicles you rode; or</li>
+                    <li>A log of local or elapsed time at each station.</li>
                 </ol>
             </ol>
         </div>
@@ -730,26 +767,146 @@ if (localStorage.getItem("theme")) {
                     <tr><td data-label="Moment"><b>No stopwatch shown</b></td><td data-label="Rule">We take your hours and minutes and add 59 seconds if we cannot verify seconds.</td></tr>
                 </tbody>
             </table>
-            <p>You can view how we reccomend you film, based on the number of devices available to you.</p>
+            <p>The other two tabs show how we recommend you film, based on the number of devices you have.</p>
         </div>
         <div class="tab-pane fade" id="timingTwoDevices" role="tabpanel" aria-labelledby="timingTwoDevicesTab" tabindex="0">
             <p><i>If you have a device that can record video, and a second device for a stopwatch:</i></p>
-            <p><b>Start.</b> Film the vehicle you're boarding, a feature that identifies the station, and something that shows the local time. Keep filming as the doors close, with a stopwatch that starts when they fully close. We also strongly suggest showing a clock with seconds on another device, just before or after the stopwatch starts. Your clock app or <a href="http://time.is">time.is</a> both work.</p>
-            <p><b>Finish.</b> Film it the same way. Stop the stopwatch just after the doors begin to open, not when you step onto the platform. Keep showing the station and a clock with seconds.</p>
-            <p><b>Transfers.</b> Film yourself leaving one vehicle and boarding the next, in one video or two. Show the local time and elapsed time at least once. If you use two videos, show both times in each.</p>
+            <div class="filmDiagramWrap">
+                <svg class="filmDiagram" viewBox="0 0 640 240" width="640" height="240" role="img" aria-label="Device 1 records video. In the shot are the vehicle, a station sign, a clock showing local time, and device 2 running the stopwatch.">
+                    <rect class="filmPhone" x="30" y="55" width="96" height="150" rx="14"/>
+                    <rect class="filmScreen" x="40" y="70" width="76" height="120" rx="4"/>
+                    <circle class="filmRecDot" cx="54" cy="84" r="6"/>
+                    <text class="filmSmall" x="64" y="89">REC</text>
+                    <circle class="filmIconLine" cx="78" cy="135" r="17"/>
+                    <circle class="filmIconLine" cx="78" cy="135" r="6"/>
+                    <text class="filmCaption" x="78" y="228">Device 1 records</text>
+                    <line class="filmCone" x1="126" y1="105" x2="250" y2="30"/>
+                    <line class="filmCone" x1="126" y1="160" x2="250" y2="212"/>
+                    <rect class="filmScene" x="250" y="18" width="370" height="204" rx="14"/>
+                    <text class="filmSmall" x="264" y="40">In the shot</text>
+                    <rect class="filmSign" x="270" y="52" width="130" height="26" rx="4"/>
+                    <text class="filmSignText" x="335" y="70">Central</text>
+                    <rect class="filmTrain" x="270" y="92" width="170" height="100" rx="10"/>
+                    <rect class="filmWindow" x="282" y="108" width="28" height="24" rx="3"/>
+                    <rect class="filmWindow" x="400" y="108" width="28" height="24" rx="3"/>
+                    <rect class="filmDoor" x="322" y="112" width="31" height="80"/>
+                    <rect class="filmDoor" x="357" y="112" width="31" height="80"/>
+                    <circle class="filmIconLine" cx="572" cy="52" r="18"/>
+                    <line class="filmIconLine" x1="572" y1="52" x2="572" y2="40"/>
+                    <line class="filmIconLine" x1="572" y1="52" x2="582" y2="57"/>
+                    <text class="filmCaption" x="572" y="88">local time</text>
+                    <rect class="filmPhone" x="470" y="118" width="80" height="90" rx="10"/>
+                    <text class="filmDigits" x="510" y="168">00:00:00</text>
+                    <text class="filmCaption" x="510" y="110">Device 2: stopwatch</text>
+                </svg>
+            </div>
+            <ol class="filmSteps">
+                <li class="filmStep">
+                    <svg class="filmIcon" viewBox="0 0 64 40" width="64" height="40" aria-hidden="true"><rect class="filmIconLine" x="4" y="4" width="18" height="32"/><rect class="filmIconLine" x="42" y="4" width="18" height="32"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(28 20)"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(36 20) rotate(180)"/></svg>
+                    <h4>1. Start</h4>
+                    <p>Film the vehicle you're boarding, a feature that identifies the station, and something that shows the local time. Keep filming as the doors close. Start the stopwatch when they touch closed. We strongly suggest showing a clock with seconds on another device just before or after the stopwatch starts; your clock app or <a href="http://time.is">time.is</a> both work.</p>
+                    <p class="onCameraHead">On camera</p>
+                    <ul class="onCamera"><li>Vehicle you're boarding</li><li>Station sign or feature</li><li>Local time, with seconds</li><li>Stopwatch starting</li></ul>
+                </li>
+                <li class="filmStep">
+                    <svg class="filmIcon" viewBox="0 0 64 40" width="64" height="40" aria-hidden="true"><rect class="filmIconLine" x="2" y="12" width="18" height="24" rx="3"/><rect class="filmIconLine" x="44" y="12" width="18" height="24" rx="3"/><path class="filmIconDash" d="M20 22 Q32 2 42 22"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(41 20) rotate(60)"/></svg>
+                    <h4>2. Each transfer</h4>
+                    <p>Film yourself leaving one vehicle and boarding the next, in one video or two.</p>
+                    <p class="onCameraHead">On camera</p>
+                    <ul class="onCamera"><li>Local time, at least once</li><li>Elapsed time, at least once</li><li>If two videos: both times in each</li></ul>
+                </li>
+                <li class="filmStep">
+                    <svg class="filmIcon" viewBox="0 0 64 40" width="64" height="40" aria-hidden="true"><rect class="filmIconLine" x="4" y="4" width="14" height="32"/><rect class="filmIconLine" x="46" y="4" width="14" height="32"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(27 20) rotate(180)"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(37 20)"/></svg>
+                    <h4>3. Finish</h4>
+                    <p>Film it the same way. Stop the stopwatch just after the doors begin to open, not when you step onto the platform.</p>
+                    <p class="onCameraHead">On camera</p>
+                    <ul class="onCamera"><li>Station sign or feature</li><li>Clock with seconds</li><li>Stopwatch stopping</li></ul>
+                </li>
+            </ol>
         </div>
         <div class="tab-pane fade" id="timingOneDevice" role="tabpanel" aria-labelledby="timingOneDeviceTab" tabindex="0">
             <p><i>If you have only one device, and it can screen record its camera app:</i></p>
-            <p><b>Start.</b> Start a screen recording with the microphone on. Show the local time on your clock app or <a href="http://time.is">time.is</a>, then switch to the camera app (you don't need to press record, just have the camera image showing). Show the vehicle you're boarding, a feature that identifies the station, and some sort of clock. A few seconds before the doors close, switch to a stopwatch and start it when they fully close.</p>
-            <p><b>Finish.</b> Film it the same way. Stop the stopwatch just after the doors begin to open, not when you step onto the platform. Keep showing the station, and show the local time at least once.</p>
-            <p><b>Transfers.</b> Use one or two screen recordings of the camera app to show yourself leaving one vehicle and boarding the next. Switch to your clock app or <a href="http://time.is">time.is</a> to show the local and elapsed time at least once. If you use two recordings, show both times in each.</p>
+            <div class="filmStrip">
+                <p class="filmRecLabel"><span class="filmRecIcon" aria-hidden="true"></span>One screen recording, microphone on</p>
+                <ol class="filmFrames">
+                <li>
+                    <svg viewBox="0 0 120 160" width="120" height="160" role="img" aria-label="Clock app showing the local time">
+                        <rect class="filmPhone" x="10" y="4" width="100" height="150" rx="14"/>
+                        <rect class="filmScreen" x="18" y="16" width="84" height="126" rx="4"/>
+                        <text class="filmCaption" x="60" y="34">Clock</text>
+                        <text class="filmDigits" x="60" y="87">08:00:12</text>
+                    </svg>
+                    <span>1. Local time</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 120 160" width="120" height="160" role="img" aria-label="Camera app showing the station sign and the vehicle">
+                        <rect class="filmPhone" x="10" y="4" width="100" height="150" rx="14"/>
+                        <rect class="filmScreen" x="18" y="16" width="84" height="126" rx="4"/>
+                        <text class="filmCaption" x="60" y="34">Camera</text>
+                        <rect class="filmSign" x="25" y="44" width="70" height="18" rx="3"/>
+                        <text class="filmSignText" x="60" y="57">Central</text>
+                        <rect class="filmTrain" x="23" y="70" width="74" height="64" rx="6"/>
+                        <rect class="filmDoor" x="45" y="82" width="14" height="52"/>
+                        <rect class="filmDoor" x="61" y="82" width="14" height="52"/>
+                    </svg>
+                    <span>2. Station &amp; vehicle</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 120 160" width="120" height="160" role="img" aria-label="Stopwatch app, started as the doors touch closed">
+                        <rect class="filmPhone" x="10" y="4" width="100" height="150" rx="14"/>
+                        <rect class="filmScreen" x="18" y="16" width="84" height="126" rx="4"/>
+                        <text class="filmCaption" x="60" y="34">Stopwatch</text>
+                        <text class="filmDigits" x="60" y="87">00:00:00</text>
+                        <circle class="filmRecDot" cx="60" cy="117" r="11"/>
+                        <polygon class="filmPlay" points="-4,-6 6,0 -4,6" transform="translate(61 117)"/>
+                    </svg>
+                    <span>3. Start stopwatch as doors touch closed</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 120 160" width="120" height="160" role="img" aria-label="Camera app again, filming the ride">
+                        <rect class="filmPhone" x="10" y="4" width="100" height="150" rx="14"/>
+                        <rect class="filmScreen" x="18" y="16" width="84" height="126" rx="4"/>
+                        <text class="filmCaption" x="60" y="34">Camera</text>
+                        <rect class="filmSign" x="25" y="44" width="70" height="18" rx="3"/>
+                        <text class="filmSignText" x="60" y="57">Central</text>
+                        <rect class="filmTrain" x="23" y="70" width="74" height="64" rx="6"/>
+                        <rect class="filmDoor" x="45" y="82" width="14" height="52"/>
+                        <rect class="filmDoor" x="61" y="82" width="14" height="52"/>
+                    </svg>
+                    <span>4. Keep filming</span>
+                </li>
+                </ol>
+            </div>
+            <ol class="filmSteps">
+                <li class="filmStep">
+                    <svg class="filmIcon" viewBox="0 0 64 40" width="64" height="40" aria-hidden="true"><rect class="filmIconLine" x="4" y="4" width="18" height="32"/><rect class="filmIconLine" x="42" y="4" width="18" height="32"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(28 20)"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(36 20) rotate(180)"/></svg>
+                    <h4>1. Start</h4>
+                    <p>Start a screen recording with the microphone on. Show the local time on your clock app or <a href="http://time.is">time.is</a>, then switch to the camera app (you don't need to press record, just have the camera image showing). A few seconds before the doors close, switch to a stopwatch and start it when they touch closed.</p>
+                    <p class="onCameraHead">On camera</p>
+                    <ul class="onCamera"><li>Local time, from the clock app</li><li>Vehicle you're boarding</li><li>Station sign or feature</li><li>Stopwatch starting</li></ul>
+                </li>
+                <li class="filmStep">
+                    <svg class="filmIcon" viewBox="0 0 64 40" width="64" height="40" aria-hidden="true"><rect class="filmIconLine" x="2" y="12" width="18" height="24" rx="3"/><rect class="filmIconLine" x="44" y="12" width="18" height="24" rx="3"/><path class="filmIconDash" d="M20 22 Q32 2 42 22"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(41 20) rotate(60)"/></svg>
+                    <h4>2. Each transfer</h4>
+                    <p>Use one or two screen recordings of the camera app to show yourself leaving one vehicle and boarding the next. Switch to your clock app or <a href="http://time.is">time.is</a> to show the time.</p>
+                    <p class="onCameraHead">On camera</p>
+                    <ul class="onCamera"><li>Local time, at least once</li><li>Elapsed time, at least once</li><li>If two recordings: both times in each</li></ul>
+                </li>
+                <li class="filmStep">
+                    <svg class="filmIcon" viewBox="0 0 64 40" width="64" height="40" aria-hidden="true"><rect class="filmIconLine" x="4" y="4" width="14" height="32"/><rect class="filmIconLine" x="46" y="4" width="14" height="32"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(27 20) rotate(180)"/><polygon class="mapArrow" points="-5,-5 5,0 -5,5" transform="translate(37 20)"/></svg>
+                    <h4>3. Finish</h4>
+                    <p>Film it the same way. Stop the stopwatch just after the doors begin to open, not when you step onto the platform.</p>
+                    <p class="onCameraHead">On camera</p>
+                    <ul class="onCamera"><li>Station sign or feature</li><li>Local time, at least once</li><li>Stopwatch stopping</li></ul>
+                </li>
+            </ol>
         </div>
     </div>
         </div>
     </details>
 
     <details class="rule-group" id="changes">
-        <summary>12. Changes &amp; Contact</summary>
+        <summary>11. Changes &amp; Contact</summary>
         <div class="group-content">
     <ol class="rules-list">
         <li>We reserve the right to change our rules at any time, and apply them at our discretion. When we do, we update the date at the top of this page.</li>

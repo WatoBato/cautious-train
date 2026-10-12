@@ -411,14 +411,304 @@ details.rule-group .tab-pane:focus {
     font-size: 14px;
 }
 
+.mapTrackAlt {
+    fill: none;
+    stroke: #458588;
+    stroke-width: 6;
+    stroke-linecap: round;
+}
+
+.mapConnector {
+    stroke: var(--fg);
+    stroke-width: 3;
+}
+
+.mapGroup {
+    fill: none;
+    stroke: var(--fg);
+    stroke-width: 2;
+    stroke-dasharray: 5 4;
+}
+
+.mapDivider {
+    stroke: var(--fg);
+    stroke-opacity: 0.3;
+    stroke-width: 2;
+}
+
+/* Route log table */
+
+.caseTable caption {
+    caption-side: top;
+    color: var(--fg);
+    font-weight: 600;
+    padding: 0 0 6px;
+}
+
+.caseTable.routeLog th:nth-child(2) {
+    width: auto;
+}
+
+.caseTable.routeLog tr.routeWalk td {
+    font-style: italic;
+    border-left: 4px solid olivedrab;
+}
+
+/* Filming diagrams and step cards in the timing tabs */
+
+.filmDiagram {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: 8px auto 16px;
+}
+
+.filmPhone {
+    fill: var(--bg-soft-contrast);
+    stroke: var(--fg);
+    stroke-width: 3;
+}
+
+.filmScreen {
+    fill: var(--bg);
+    stroke: var(--fg);
+    stroke-opacity: 0.4;
+    stroke-width: 1;
+}
+
+.filmRecBar {
+    fill: rgba(204, 36, 29, 0.12);
+    stroke: #cc241d;
+    stroke-width: 2;
+}
+
+.filmRecDot {
+    fill: #cc241d;
+}
+
+.filmPlay {
+    fill: #fff;
+}
+
+.filmScene,
+.filmCone {
+    fill: none;
+    stroke: var(--fg);
+    stroke-opacity: 0.5;
+    stroke-width: 2;
+    stroke-dasharray: 6 5;
+}
+
+.filmCone {
+    stroke-width: 1.5;
+}
+
+.filmSign {
+    fill: #076678;
+}
+
+.filmSignText {
+    fill: #fff;
+    font-family: var(--base-font-stack);
+    font-size: 12px;
+    font-weight: 700;
+    text-anchor: middle;
+}
+
+.filmTrain {
+    fill: none;
+    stroke: #d65d0e;
+    stroke-width: 3;
+}
+
+.filmWindow {
+    fill: none;
+    stroke: var(--fg);
+    stroke-opacity: 0.6;
+    stroke-width: 2;
+}
+
+.filmDoor {
+    fill: olivedrab;
+    stroke: var(--fg);
+    stroke-width: 2;
+}
+
+.filmIconLine,
+.filmIconDash {
+    fill: none;
+    stroke: var(--fg);
+    stroke-width: 2.5;
+}
+
+.filmIconDash {
+    stroke-dasharray: 4 3;
+}
+
+.filmArrowLine {
+    stroke: var(--fg);
+    stroke-width: 2;
+}
+
+.filmDigits {
+    fill: var(--fg);
+    font-family: var(--runs-table-time-font-stack);
+    font-size: 16px;
+    text-anchor: middle;
+}
+
+.filmSmall,
+.filmCaption {
+    fill: var(--fg);
+    font-family: var(--base-font-stack);
+    font-size: 13px;
+}
+
+.filmCaption {
+    text-anchor: middle;
+}
+
+.filmDiagramWrap {
+    overflow-x: auto;
+}
+
+.filmStrip {
+    margin: 8px 0 16px;
+}
+
+.filmRecLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 600px;
+    margin: 0 auto 10px;
+    padding: 2px 14px;
+    border: 2px solid #cc241d;
+    border-radius: 999px;
+    background-color: rgba(204, 36, 29, 0.12);
+    font-size: 0.95em;
+}
+
+.filmRecIcon {
+    flex: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #cc241d;
+}
+
+.filmFrames {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    max-width: 640px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.filmFrames li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.filmFrames svg {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+}
+
+.filmFrames li:not(:last-child)::after {
+    content: "\2192";
+    position: absolute;
+    top: 40%;
+    right: -12px;
+    font-size: 1.3em;
+}
+
+.filmSteps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+}
+
+.filmStep {
+    border: 2px solid darkolivegreen;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin: 0;
+}
+
+.filmIcon {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.filmStep h4 {
+    font-family: var(--brand-font-stack);
+    font-size: 1.3em;
+    margin: 0 0 6px;
+}
+
+.filmStep p {
+    margin: 0 0 8px;
+}
+
+.onCameraHead {
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+.onCamera {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.onCamera li {
+    margin-bottom: 2px;
+}
+
+.onCamera li::before {
+    content: "\2713";
+    color: olivedrab;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
 @media(max-width: 768px) {
     .rulesOverview h2 {
         font-size: 1.4em;
     }
 
     .twoLists,
-    .mapPane {
+    .mapPane,
+    .filmSteps {
         grid-template-columns: 1fr;
+    }
+
+    .filmDiagram {
+        min-width: 520px;
+    }
+
+    .filmFrames {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 16px;
+    }
+
+    .filmFrames li:nth-child(2)::after {
+        display: none;
     }
 
     .caseTable thead {
